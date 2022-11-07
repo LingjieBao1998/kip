@@ -1,0 +1,296 @@
+/**{margin:0;padding: 0;}*/
+
+/**{margin:0;padding: 0;}*/
+
+*{
+    box-sizing:border-box
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+   }
+
+body{
+    margin: 0 auto;
+    max-width: 1280px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+
+}
+
+#name{
+    text-transform: uppercase;
+    color: crimson;
+}
+
+
+#navlist{
+    margin: 0 auto;
+    width: 100vw;
+    background-color: #333;
+    height: auto;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 1000;
+    font-size: 1em;
+    text-align: center;
+    }
+
+.head{
+    padding: 14px 16px;
+}
+    
+    
+    
+.menulist{
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+        /* position: fixed; */
+        z-index: 1000;
+        top: 0;
+        width: 100vw;
+        height: auto;
+        max-width: 1280px;
+        margin: 0 auto;
+        width:95%;
+        padding:0px;
+        font-size: 1.5rem;
+}
+
+.head{
+    float: left;
+}
+
+.item,.icon{
+    float: right;
+}
+
+ul.menulist li{
+    display: inline-block;
+    padding: 14px 16px;
+
+}
+
+ul.menulist li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+}
+
+
+.item a:hover{
+    background-color: green;
+    /*padding: 5px 5px;*/
+}
+
+.hidden_item a:hover{
+    background-color: green;
+    /*padding: 5px 5px;*/
+}
+
+.hidden_item,.item a{
+    text-decoration: none;
+    color: white;
+}
+
+.hidden_item{
+    padding:6px,7px;
+    font-size: 0.5em;
+    line-height: 0.5;
+    right:10px;
+}
+
+
+.hidden_item{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    font-size: 0.5em;
+    
+}
+
+.icon {
+    display: none;
+    text-align: center;
+    cursor:pointer;
+    flex:right
+}
+
+
+
+
+
+#foot{
+            margin: 0 auto;
+            width: 100vw;
+            background-color: #333;
+            height: auto;
+            position: fixed;
+            left:0px;
+            bottom:0px;
+	    font-size:1.0rem;
+        }
+        
+footer {
+            width: 100%;
+            color: white;
+            margin: 0 auto;
+            /*margin-bottom: 0%;*/
+            background: #333;
+            text-align: center;
+            z-index: 9999;
+            max-width: 1280px;
+        
+}
+
+
+
+
+.module,.header{
+            
+            line-height: 1.5;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+            border-color: grey;
+            font-weight: bold;
+            word-break: break-word;
+            color:white;
+            margin: 0.5rem auto;
+            
+        }
+
+.view {
+            
+            line-height: 1.5;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid transparent;
+            border-radius: 0.5em;
+            border-color: grey;
+            word-break: break-word;
+            margin: 0.5rem auto;
+            
+        }
+
+
+div.module:hover{
+    background-color: green;
+}
+.module{
+    cursor:pointer;
+    background-color: #333;
+}
+.header{
+    background-color:grey;
+
+}
+
+
+
+
+.all{
+    text-align:center;
+}
+
+.all p{text-align:justify;
+}
+
+.number{
+    color:blue;
+    font-size: 1.5rem;
+}
+
+.description{
+    text-align: left;
+    margin:auto;
+}
+
+
+.view {
+    display:none;
+}
+
+.description{
+    color:balck;
+}
+
+
+
+@media only screen and (max-width: 836px) {
+    .item {
+    display: none;
+    }
+    .icon {
+    display: block;
+    }
+    .small_pirecture{
+        display: block;
+    }
+    .large_pirecture{
+        display: none;
+    }
+}
+
+@media screen and (min-width:836.1px){
+    .item {
+            display: block;
+            }
+    .icon {
+            display: none;
+            }
+    .hidden_item{
+            display: none;
+
+    }
+    .small_pirecture{
+        display: none;
+    }
+    .large_pirecture{
+        display: block;
+    }
+
+}
+
+img{
+    width:100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 18px 0px grey;
+}
+
+h3{
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.token{
+    color: crimson;
+}
+
+b.tab {
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+
+b.page, b.invalid{
+    color: red;
+    background-color: gold;
+}
+
+.care{
+    color: orangered;
+    font-size: 1.0rem;
+    text-align: left;
+
+}
+
+p{font-size:1.0rem;
+  }

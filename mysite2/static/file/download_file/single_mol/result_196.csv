@@ -1,0 +1,205 @@
+Canonical_Smiles,UniProt,Group,Family,Name,Symbol,Prediction
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O00141,AGC,SGK,Serine/threonine-protein kinase Sgk1 ,SGK1,0.0748
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O00311,Other,CDC7,Cell division cycle 7-related protein kinase ,CDC7,0.0861
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O00444,Other,PLK,Serine/threonine-protein kinase PLK4 ,PLK4,0.4017
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O14920,Other,IKK,Inhibitor of nuclear factor kappa-B kinase subunit beta ,IKBKB,0.1437
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O14965,Other,Aur,Aurora kinase A ,AURKA,0.685
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O15111,Other,IKK,Inhibitor of nuclear factor kappa-B kinase subunit alpha ,CHUK,0.089
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O15146,TK,Musk,"Muscle, skeletal receptor tyrosine-protein kinase ",MUSK,0.2329
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O15264,CMGC,MAPK,Mitogen-activated protein kinase 13 ,MAPK13,0.2556
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O43293,CAMK,DAPK,Death-associated protein kinase 3 ,DAPK3,0.1628
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O43318,TKL,MLK,Mitogen-activated protein kinase kinase kinase 7 ,MAP3K7,0.4636
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O43353,TKL,RIPK,Receptor-interacting serine/threonine-protein kinase 2 ,RIPK2,0.8561
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O43781,CMGC,DYRK,Dual specificity tyrosine-phosphorylation-regulated kinase 3 ,DYRK3,0.1812
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O60285,CAMK,CAMKL,NUAK family SNF1-like kinase 1 ,NUAK1,0.3748
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O60674,TK,JakA,Tyrosine-protein kinase JAK2 ,JAK2,0.7304
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O75116,AGC,DMPK,Rho-associated protein kinase 2 ,ROCK2,0.2342
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O75385,Other,ULK,Serine/threonine-protein kinase ULK1 ,ULK1,0.1928
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O75460,Other,IRE,Serine/threonine-protein kinase/endoribonuclease IRE1 ,ERN1,0.2438
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O75676,AGC,RSK,Ribosomal protein S6 kinase alpha-4 ,RPS6KA4,0.3878
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O75716,Other,NAK,Serine/threonine-protein kinase 16 ,STK16,0.3276
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O94804,STE,STE20,Serine/threonine-protein kinase 10 ,STK10,0.913
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O94806,CAMK,PKD,Serine/threonine-protein kinase D3 ,PRKD3,0.3404
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O95819,STE,STE20,Mitogen-activated protein kinase kinase kinase kinase 4 ,MAP4K4,0.5131
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O96013,STE,STE20,Serine/threonine-protein kinase PAK 4 ,PAK4,0.4706
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,O96017,CAMK,RAD53,Serine/threonine-protein kinase Chk2 ,CHEK2,0.8541
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P00519,TK,Abl,Tyrosine-protein kinase ABL1 ,ABL1,0.6311
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P00533,TK,EGFR,Epidermal growth factor receptor ,EGFR,0.9588
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P04049,TKL,RAF,RAF proto-oncogene serine/threonine-protein kinase ,RAF1,0.2966
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P04626,TK,EGFR,Receptor tyrosine-protein kinase erbB-2 ,ERBB2,0.8418
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P04629,TK,Trk,High affinity nerve growth factor receptor ,NTRK1,0.1045
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P05129,AGC,PKC,Protein kinase C gamma type ,PRKCG,0.073
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P05771,AGC,PKC,Protein kinase C beta type ,PRKCB,0.0349
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P06213,TK,InsR,Insulin receptor ,INSR,0.4225
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P06239,TK,Src,Tyrosine-protein kinase Lck ,LCK,0.7119
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P06241,TK,Src,Tyrosine-protein kinase Fyn ,FYN,0.2904
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P06493,CMGC,CDK,Cyclin-dependent kinase 1 ,CDK1,0.1413
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P07332,TK,Fer,Tyrosine-protein kinase Fes/Fps ,FES,0.58
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P07333,TK,PDGFR,Macrophage colony-stimulating factor 1 receptor ,CSF1R,0.2213
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P07947,TK,Src,Tyrosine-protein kinase Yes ,YES1,0.8134
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P07948,TK,Src,Tyrosine-protein kinase Lyn ,LYN,0.9633
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P07949,TK,Ret,Proto-oncogene tyrosine-protein kinase receptor Ret ,RET,0.9497
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P08069,TK,InsR,Insulin-like growth factor 1 receptor ,IGF1R,0.324
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P08581,TK,Met,Hepatocyte growth factor receptor ,MET,0.3477
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P08631,TK,Src,Tyrosine-protein kinase HCK ,HCK,0.6096
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P08922,TK,Sev,Proto-oncogene tyrosine-protein kinase ROS ,ROS1,0.6913
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P09619,TK,PDGFR,Platelet-derived growth factor receptor beta ,PDGFRB,0.3405
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P09769,TK,Src,Tyrosine-protein kinase Fgr ,FGR,0.8263
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P10721,TK,PDGFR,Mast/stem cell growth factor receptor Kit ,KIT,0.316
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P11309,CAMK,PIM,Serine/threonine-protein kinase pim-1 ,PIM1,0.1356
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P11362,TK,FGFR,Fibroblast growth factor receptor 1 ,FGFR1,0.3584
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P11802,CMGC,CDK,Cyclin-dependent kinase 4 ,CDK4,0.0828
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P12931,TK,Src,Proto-oncogene tyrosine-protein kinase Src ,SRC,0.7829
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P15735,CAMK,PHK,"Phosphorylase b kinase gamma catalytic chain, liver/testis isoform ",PHKG2,0.2535
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P16234,TK,PDGFR,Platelet-derived growth factor receptor alpha ,PDGFRA,0.2612
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P16591,TK,Fer,Tyrosine-protein kinase Fer ,FER,0.5138
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P17252,AGC,PKC,Protein kinase C alpha type ,PRKCA,0.0458
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P17612,AGC,PKA,cAMP-dependent protein kinase catalytic subunit alpha ,PRKACA,0.1846
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P17948,TK,VEGFR,Vascular endothelial growth factor receptor 1 ,FLT1,0.8424
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P19784,CMGC,CK2,Casein kinase II subunit alpha' ,CSNK2A2,0.2246
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P22607,TK,FGFR,Fibroblast growth factor receptor 3 ,FGFR3,0.3552
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P23443,AGC,RSK,Ribosomal protein S6 kinase beta-1 ,RPS6KB1,0.1896
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P24941,CMGC,CDK,Cyclin-dependent kinase 2 ,CDK2,0.1248
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P27448,CAMK,CAMKL,MAP/microtubule affinity-regulating kinase 3 ,MARK3,0.4881
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P28482,CMGC,MAPK,Mitogen-activated protein kinase 1 ,MAPK1,0.1598
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P29317,TK,Eph,Ephrin type-A receptor 2 ,EPHA2,0.9275
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P29376,TK,ALK,Leukocyte tyrosine kinase receptor ,LTK,0.6738
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P29597,TK,JakA,Non-receptor tyrosine-protein kinase TYK2 ,TYK2,0.35
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P30291,Other,WEE,Wee1-like protein kinase ,WEE1,0.3008
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P30530,TK,Axl,Tyrosine-protein kinase receptor UFO ,AXL,0.5932
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P31749,AGC,Akt,RAC-alpha serine/threonine-protein kinase ,AKT1,0.0124
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P31751,AGC,Akt,RAC-beta serine/threonine-protein kinase ,AKT2,0.0108
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P33981,Other,TTK,Dual specificity protein kinase TTK ,TTK,0.5396
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P34947,AGC,GRK,G protein-coupled receptor kinase 5 ,GRK5,0.1544
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P35916,TK,VEGFR,Vascular endothelial growth factor receptor 3 ,FLT4,0.8345
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P35968,TK,VEGFR,Vascular endothelial growth factor receptor 2 ,KDR,0.9024
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P36507,STE,STE7,Dual specificity mitogen-activated protein kinase kinase 2 ,MAP2K2,0.3112
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P36888,TK,PDGFR,Receptor-type tyrosine-protein kinase FLT3 ,FLT3,0.8682
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P36897,TKL,STKR,TGF-beta receptor type-1 ,TGFBR1,0.4313
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P37023,TKL,STKR,Serine/threonine-protein kinase receptor R3 ,ACVRL1,0.5321
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P37173,TKL,STKR,TGF-beta receptor type-2 ,TGFBR2,0.4636
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P41240,TK,Csk,Tyrosine-protein kinase CSK ,CSK,0.38
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P41279,STE,STE-Unique,Mitogen-activated protein kinase kinase kinase 8 ,MAP3K8,0.0987
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P41743,AGC,PKC,Protein kinase C iota type ,PRKCI,0.0775
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P42680,TK,Tec,Tyrosine-protein kinase Tec ,TEC,0.3035
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P42681,TK,Tec,Tyrosine-protein kinase TXK ,TXK,0.7666
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P42684,TK,Abl,Tyrosine-protein kinase ABL2 ,ABL2,0.7972
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P42685,TK,Src,Tyrosine-protein kinase FRK ,FRK,0.884
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P43405,TK,Syk,Tyrosine-protein kinase SYK ,SYK,0.517
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P45983,CMGC,MAPK,Mitogen-activated protein kinase 8 ,MAPK8,0.2331
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P45984,CMGC,MAPK,Mitogen-activated protein kinase 9 ,MAPK9,0.5476
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P48729,CK1,CK1,Casein kinase I isoform alpha ,CSNK1A1,0.1539
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P48730,CK1,CK1,Casein kinase I isoform delta ,CSNK1D,0.0848
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P49336,CMGC,CDK,Cyclin-dependent kinase 8 ,CDK8,0.2279
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P49674,CK1,CK1,Casein kinase I isoform epsilon ,CSNK1E,0.1018
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P49759,CMGC,CLK,Dual specificity protein kinase CLK1 ,CLK1,0.2705
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P49760,CMGC,CLK,Dual specificity protein kinase CLK2 ,CLK2,0.3461
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P49840,CMGC,GSK,Glycogen synthase kinase-3 alpha ,GSK3A,0.5567
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P49841,CMGC,GSK,Glycogen synthase kinase-3 beta ,GSK3B,0.4059
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P50613,CMGC,CDK,Cyclin-dependent kinase 7 ,CDK7,0.0726
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P51451,TK,Src,Tyrosine-protein kinase Blk ,BLK,0.8699
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P51617,TKL,IRAK,Interleukin-1 receptor-associated kinase 1 ,IRAK1,0.6265
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P51813,TK,Tec,Cytoplasmic tyrosine-protein kinase BMX ,BMX,0.2624
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P51817,AGC,PKA,cAMP-dependent protein kinase catalytic subunit PRKX ,PRKX,0.1842
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P51955,Other,NEK,Serine/threonine-protein kinase Nek2 ,NEK2,0.2057
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P51957,Other,NEK,Serine/threonine-protein kinase Nek4 ,NEK4,0.3908
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P52333,TK,JakA,Tyrosine-protein kinase JAK3 ,JAK3,0.2703
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P53350,Other,PLK,Serine/threonine-protein kinase PLK1 ,PLK1,0.0688
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P53667,TKL,LISK,LIM domain kinase 1 ,LIMK1,0.5801
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P53779,CMGC,MAPK,Mitogen-activated protein kinase 10 ,MAPK10,0.5089
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P54760,TK,Eph,Ephrin type-B receptor 4 ,EPHB4,0.972
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P78527,Atypical,PIKK,DNA-dependent protein kinase catalytic subunit ,PRKDC,0.4709
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,P80192,TKL,MLK,Mitogen-activated protein kinase kinase kinase 9 ,MAP3K9,0.4337
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q00526,CMGC,CDK,Cyclin-dependent kinase 3 ,CDK3,0.1491
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q00534,CMGC,CDK,Cyclin-dependent kinase 6 ,CDK6,0.1658
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q00535,CMGC,CDK,Cyclin-dependent-like kinase 5 ,CDK5,0.0624
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q02156,AGC,PKC,Protein kinase C epsilon type ,PRKCE,0.0833
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q02750,STE,STE7,Dual specificity mitogen-activated protein kinase kinase 1 ,MAP2K1,0.2683
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q02763,TK,Tie,Angiopoietin-1 receptor ,TEK,0.7336
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q04759,AGC,PKC,Protein kinase C theta type ,PRKCQ,0.0115
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q04771,TKL,STKR,Activin receptor type-1 ,ACVR1,0.3505
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q05397,TK,FAK,Focal adhesion kinase 1 ,PTK2,0.1202
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q05513,AGC,PKC,Protein kinase C zeta type ,PRKCZ,0.0558
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q05655,AGC,PKC,Protein kinase C delta type ,PRKCD,0.02
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q06418,TK,Axl,Tyrosine-protein kinase receptor TYRO3 ,TYRO3,0.4975
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q07912,TK,Ack,Activated CDC42 kinase 1 ,TNK2,0.6722
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q08881,TK,Tec,Tyrosine-protein kinase ITK/TSK ,ITK,0.237
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q12851,STE,STE20,Mitogen-activated protein kinase kinase kinase kinase 2 ,MAP4K2,0.3667
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q12866,TK,Axl,Tyrosine-protein kinase Mer ,MERTK,0.7101
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13043,STE,STE20,Serine/threonine-protein kinase 4 ,STK4,0.0639
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13131,CAMK,CAMKL,5'-AMP-activated protein kinase catalytic subunit alpha-1 ,PRKAA1,0.2752
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13153,STE,STE20,Serine/threonine-protein kinase PAK 1 ,PAK1,0.0991
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13188,STE,STE20,Serine/threonine-protein kinase 3 ,STK3,0.2302
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13237,AGC,PKG,cGMP-dependent protein kinase 2 ,PRKG2,0.0641
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13315,Atypical,PIKK,Serine-protein kinase ATM ,ATM,0.121
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13418,TKL,MLK,Integrin-linked protein kinase ,ILK,0.0649
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13464,AGC,DMPK,Rho-associated protein kinase 1 ,ROCK1,0.0834
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13535,Atypical,PIKK,Serine/threonine-protein kinase ATR ,ATR,0.1616
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13555,CAMK,CAMK2,Calcium/calmodulin-dependent protein kinase type II subunit gamma ,CAMK2G,0.2188
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13557,CAMK,CAMK2,Calcium/calmodulin-dependent protein kinase type II subunit delta ,CAMK2D,0.1377
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13627,CMGC,DYRK,Dual specificity tyrosine-phosphorylation-regulated kinase 1A ,DYRK1A,0.1233
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13882,TK,Src,Protein-tyrosine kinase 6 ,PTK6,0.8911
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q13976,AGC,PKG,cGMP-dependent protein kinase 1 ,PRKG1,0.0459
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q14164,Other,IKK,Inhibitor of nuclear factor kappa-B kinase subunit epsilon ,IKBKE,0.3691
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q14289,TK,FAK,Protein-tyrosine kinase 2-beta ,PTK2B,0.4645
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q14680,CAMK,CAMKL,Maternal embryonic leucine zipper kinase ,MELK,0.4213
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15118,Atypical,PDHK,[Pyruvate dehydrogenase ,PDK1,0.0962
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15119,Atypical,PDHK,[Pyruvate dehydrogenase ,PDK2,0.8089
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15139,CAMK,PKD,Serine/threonine-protein kinase D1 ,PRKD1,0.3876
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15303,TK,EGFR,Receptor tyrosine-protein kinase erbB-4 ,ERBB4,0.9479
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15349,AGC,RSK,Ribosomal protein S6 kinase alpha-2 ,RPS6KA2,0.1271
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15418,AGC,RSK,Ribosomal protein S6 kinase alpha-1 ,RPS6KA1,0.1933
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15746,CAMK,MLCK,"Myosin light chain kinase, smooth muscle ",MYLK,0.2241
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q15759,CMGC,MAPK,Mitogen-activated protein kinase 11 ,MAPK11,0.4968
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16288,TK,Trk,NT-3 growth factor receptor ,NTRK3,0.35
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16512,AGC,PKN,Serine/threonine-protein kinase N1 ,PKN1,0.1465
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16513,AGC,PKN,Serine/threonine-protein kinase N2 ,PKN2,0.0817
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16539,CMGC,MAPK,Mitogen-activated protein kinase 14 ,MAPK14,0.5794
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16584,TKL,MLK,Mitogen-activated protein kinase kinase kinase 11 ,MAP3K11,0.1657
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16620,TK,Trk,BDNF/NT-3 growth factors receptor ,NTRK2,0.257
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16816,CAMK,PHK,"Phosphorylase b kinase gamma catalytic chain, skeletal muscle/heart isoform ",PHKG1,0.1279
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q16832,TK,DDR,Discoidin domain-containing receptor 2 ,DDR2,0.6802
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q59H18,TKL,MLK,Serine/threonine-protein kinase TNNI3K ,TNNI3K,0.7643
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q5S007,TKL,LRRK,Leucine-rich repeat serine/threonine-protein kinase 2 ,LRRK2,0.3971
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q5VT25,AGC,DMPK,Serine/threonine-protein kinase MRCK alpha ,CDC42BPA,0.4216
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q7KZI7,CAMK,CAMKL,Serine/threonine-protein kinase MARK2 ,MARK2,0.4011
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q7L7X3,STE,STE20,Serine/threonine-protein kinase TAO1 ,TAOK1,0.4202
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q86V86,CAMK,PIM,Serine/threonine-protein kinase pim-3 ,PIM3,0.1242
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q8IW41,CAMK,MAPKAPK,MAP kinase-activated protein kinase 5 ,MAPKAPK5,0.1754
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q8N4C8,STE,STE20,Misshapen-like kinase 1 ,MINK1,0.3514
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q8N5S9,Other,CAMKK,Calcium/calmodulin-dependent protein kinase kinase 1 ,CAMKK1,0.1976
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q8NE63,CMGC,DYRK,Homeodomain-interacting protein kinase 4 ,HIPK4,0.63
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q8TDC3,CAMK,CAMKL,Serine/threonine-protein kinase BRSK1 ,BRSK1,0.1408
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q8TF76,Other,Haspin,Serine/threonine-protein kinase haspin ,HASPIN,0.3511
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q92630,CMGC,DYRK,Dual specificity tyrosine-phosphorylation-regulated kinase 2 ,DYRK2,0.2801
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q96GD4,Other,Aur,Aurora kinase B ,AURKB,0.7965
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q96KB5,Other,TOPK,Lymphokine-activated killer T-cell-originated protein kinase ,PBK,0.1405
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q96L34,CAMK,CAMKL,MAP/microtubule affinity-regulating kinase 4 ,MARK4,0.3062
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q96PF2,CAMK,TSSK,Testis-specific serine/threonine-protein kinase 2 ,TSSK2,0.1593
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q96RR4,Other,CAMKK,Calcium/calmodulin-dependent protein kinase kinase 2 ,CAMKK2,0.1588
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q96SB4,CMGC,SRPK,SRSF protein kinase 1 ,SRPK1,0.072
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9BXA7,CAMK,TSSK,Testis-specific serine/threonine-protein kinase 1 ,TSSK1B,0.3295
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9BYT3,CAMK,CAMK-Unique,Serine/threonine-protein kinase 33 ,STK33,0.2244
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9BZL6,CAMK,PKD,Serine/threonine-protein kinase D2 ,PRKD2,0.4732
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9H093,CAMK,CAMKL,NUAK family SNF1-like kinase 2 ,NUAK2,0.4409
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9H1R3,CAMK,MLCK,"Myosin light chain kinase 2, skeletal/cardiac muscle ",MYLK2,0.1625
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9H2G2,STE,STE20,STE20-like serine/threonine-protein kinase ,SLK,0.9155
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9H2X6,CMGC,DYRK,Homeodomain-interacting protein kinase 2 ,HIPK2,0.386
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9H4B4,Other,PLK,Serine/threonine-protein kinase PLK3 ,PLK3,0.2116
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9HAZ1,CMGC,CLK,Dual specificity protein kinase CLK4 ,CLK4,0.3797
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9NWZ3,TKL,IRAK,Interleukin-1 receptor-associated kinase 4 ,IRAK4,0.5027
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9NYL2,TKL,MLK,Mitogen-activated protein kinase kinase kinase 20 ,MAP3K20,0.3726
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9NYY3,Other,PLK,Serine/threonine-protein kinase PLK2 ,PLK2,0.0704
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9P1W9,CAMK,PIM,Serine/threonine-protein kinase pim-2 ,PIM2,0.0386
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UBE8,CMGC,MAPK,Serine/threonine-protein kinase NLK ,NLK,0.7451
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UEE5,CAMK,DAPK,Serine/threonine-protein kinase 17A ,STK17A,0.2476
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UF33,TK,Eph,Ephrin type-A receptor 6 ,EPHA6,0.952
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UHD2,Other,IKK,Serine/threonine-protein kinase TBK1 ,TBK1,0.3489
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UK32,AGC,RSK,Ribosomal protein S6 kinase alpha-6 ,RPS6KA6,0.1768
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UM73,TK,ALK,ALK tyrosine kinase receptor ,ALK,0.2601
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9UQB9,Other,Aur,Aurora kinase C ,AURKC,0.5561
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9Y243,AGC,Akt,RAC-gamma serine/threonine-protein kinase ,AKT3,0.042
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9Y2U5,STE,STE11,Mitogen-activated protein kinase kinase kinase 2 ,MAP3K2,0.4903
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9Y463,CMGC,DYRK,Dual specificity tyrosine-phosphorylation-regulated kinase 1B ,DYRK1B,0.1039
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9Y4K4,STE,STE20,Mitogen-activated protein kinase kinase kinase kinase 5 ,MAP4K5,0.6947
+COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1OCCN1CC2(CC2)C2(C1)OCCO2,Q9Y6E0,STE,STE20,Serine/threonine-protein kinase 24 ,STK24,0.078

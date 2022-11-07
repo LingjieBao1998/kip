@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="kip/static/css/homepage02.css">
+    <link rel="stylesheet" type="text/css" href="kip/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" language="javascript" src="kip/static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
+    <script type="text/javascript" language="javascript" src="kip/static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
+</head>
+<body>
+
+
+    {# navbar #}
+    {# navbar #}
+    <div id="navlist">
+        <header>
+            <ul class="menulist">
+                <li class="head">
+                    <div id="name"><b>KIP</b>
+                        <div class="hidden_item" style="display:none">
+                             <a href="/kip"><i class="fa fa-home"></i> Home</a>
+                             <a href="kip/submit"><i class="fa fa-upload"></i> Submit</a>
+                             <a href="kip/help"><i class="fa fa-book"></i> Help</a>
+                             <a href="kip/contact"><i class="fa fa-envelope"></i> Contact</a>
+                        </div>
+                    </div>
+                </li>
+                <div class="item">
+                        <li><a href="/kip"><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href="kip/submit"><i class="fa fa-upload"></i> Submit</a></li>
+                        <li><a href="kip/help"><i class="fa fa-book"></i> Help</a></li>
+                        <li><a href="kip/contact"><i class="fa fa-envelope"></i> Contact</a></li>
+                </div>
+
+                <div style="float:right">
+                    <li style="margin-top: 9px;"><button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button></li>
+                </div>
+
+                
+            </ul>
+        </header>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+
+
+    <div class="subtitle">Introducation | </div>
+    <br>
+
+    <div id="description">
+        <h2>KIP Server</h2>
+        <hr>
+	<p style="line-height: 1.6em;text-align:justify;font-size:1.0rem">&nbsp &nbsp <b style="color:crimson;">KIP</b> ( <b style="color:crimson;">K</b>inases <b style="color:crimson;">I</b>nhibitors <b style="color:crimson;">P</b>rediciton)
+        is a server to predict the inhibitory activity of small molecules against 204 protein kinases simultaneously, which is a prerequisite for drug discovery.
+	Now, the server contains one state-of-the-art machine-learning model named <b>AMGU</b> developed by Hou group,
+        which is developed based on multi-task Graph Isomorphism Network (MT-GIN) with Uncertainty Weighting strategy and auxiliary learning applied.
+        </p>
+        <img src="kip/static/img/model1.png"  alt="GNN_Model" style="width:95%;max-wdith:1280px;text-content: center"/>
+    </div>
+
+
+    <br>
+    <div class="subtitle">Dataset | </div>
+    <br>
+
+    <div id="dataset">
+        <table id="download">
+            <thead>
+                <tr>
+                    <td>Item</td>
+                    <td style="text-align: center;">Download</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="first_column">Training Set</td>
+                    <td>
+                        <div class="download_item">
+                            <a href="kip/static/file/dataset/Classification Training Dataset.csv" download="Classification Training Dataset.csv">Classification Dataset.csv</a>
+                            <a href="kip/static/file/dataset/Regression Training Dataset.csv" download="Regression Training Dataset.csv">Regression Dataset.csv</a>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="first_column">Test Set</td>
+                    <td>
+                        <div class="download_item">
+                            <a href="kip/static/file/dataset/The Dataset of PKIS.csv" download="The Dataset of PKIS.csv">The Dataset of PKIS.csv</a>
+                            <a href="kip/static/file/dataset/The Dataset of PKIS 2.csv" download="The Dataset of PKIS 2.csv">The Dataset of PKIS 2.csv</a>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="first_column">Target information</td>
+                    <td>
+                        <div class="download_item">
+                            <a href="kip/static/file/UniProt.csv" download="UniProt.csv">The UniProt id of Kinases.csv</a>
+                        </div>
+                    </td>
+                </tr>
+            <tbody>
+        </table>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div id="foot">
+        <footer>
+            <p>
+            © 2021 Tingjun Hou's Group. All Rights Reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+
+        $(document).ready( function(){
+            $("#hidden_item_btn").on("click",function(){
+                $(".hidden_item").toggle();
+            });
+    })
+    </script>
+
+
+</body>
+</html>

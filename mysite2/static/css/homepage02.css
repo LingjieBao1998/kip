@@ -1,0 +1,264 @@
+/**{margin:0;padding: 0;}*/
+
+*{
+        box-sizing:border-box;
+	
+}
+
+*, ::after, ::before {
+        box-sizing: border-box;
+       }
+
+body{
+        margin: 0 auto;
+        max-width: 1280px;
+        line-height: 1.5;
+        font-size: 1.1rem;
+
+}
+
+#name{
+        text-transform: uppercase;
+        color: crimson;
+}
+
+
+#navlist{
+        margin: 0 auto;
+        width: 100vw;
+        background-color: #333;
+        height: auto;
+        position: fixed;
+        top:0px;
+        left:0px;
+        z-index: 1000;
+        font-size: 1.5rem;
+        text-align: center;
+        }
+
+.head{
+        padding: 14px 16px;
+}
+        
+        
+        
+.menulist{
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #333;
+            /* position: fixed; */
+            z-index: 1000;
+            top: 0;
+            margin: 0 auto;
+            width: 100vw;
+            height: auto;
+            max-width: 1280px;
+            margin: 0 auto;
+            width:95%;
+            padding:0px;
+}
+
+.head{
+        float: left;
+}
+
+.item,.icon{
+        float: right;
+}
+
+ul.menulist li{
+        display: inline-block;
+        padding: 14px 16px;
+
+}
+
+ul.menulist li a{
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 14px 16px;
+}
+
+
+.item a:hover{
+        background-color: green;
+        /*padding: 5px 5px;*/
+}
+
+.hidden_item a:hover{
+        background-color: green;
+        /*padding: 5px 5px;*/
+}
+
+.hidden_item,.item a{
+        text-decoration: none;
+        color: white;
+}
+
+.hidden_item{
+        padding:6px,7px;
+        font-size: 0.5em;
+        line-height: 0.5;
+        right:10px;
+}
+
+
+.hidden_item{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        font-size: 0.5em;
+        
+}
+
+.icon {
+        display: none;
+        text-align: center;
+        cursor:pointer;
+        flex:right
+}
+
+
+
+
+#description{
+        text-align: center;
+        background-color: whitesmoke;
+        border-radius: 0.5em;
+        overflow: hidden;
+        box-shadow: 0px 2px 18px 0px grey;
+        border: 1px solid white;
+        margin: 0 auto;
+        padding: 1.25em;
+        width:100%;
+        font-size: 1.25rem;
+}
+
+
+
+
+#foot{
+        margin: 0 auto;
+        width: 100vw;
+        background-color: #333;
+        height: auto;
+        position: fixed;
+        left:0px;
+        bottom:0px;
+	font-size: 1.0rem;
+    }
+    
+footer {
+        width: 100%;
+        color: white;
+        margin: 0 auto;
+        /*margin-bottom: 0%;*/
+        background: #333;
+        text-align: center;
+        z-index: 9999;
+        max-width: 1280px;
+    
+        }
+
+.subtitle{
+        word-break: break-all;
+        text-align: left;
+        background: #333;
+        max-width: 1280px;
+        padding: 0.75em 1.25em;
+        border: 1px solid transparent;
+        font-weight: bold;
+        font-size: 1.25em;
+        border-radius: 0.25em;
+        margin: 0 auto;
+        color: crimson;
+        width:100%;
+        }
+
+
+
+table{
+        margin: auto;
+        word-break: break-all;
+        word-wrap: break-word; 
+        width:100%;
+        border-collapse:collapse;
+        text-align: center;
+	font-size: 1.0rem;
+        }
+            
+            
+            
+/*设置表头*/
+table thead tr {
+        background-color:#333;
+        color: crimson;
+        font-weight: bold;
+}
+            
+table th,table td {
+        padding: 12px 15px;
+}
+            
+/*表格底部线*/
+table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+            
+table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+}
+            
+table tbody tr:last-of-type {
+        border-bottom: 2px solid black;
+}
+            
+table tbody tr:hover {
+        background-color: lightgrey;
+}
+
+.first_column {
+        font-weight:bold ;
+}
+.download_item{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+}
+
+.download_item a {
+        font-weight:bold ;
+        text-decoration: none;
+        color: crimson;
+        
+}
+
+
+@media only screen and (max-width: 836px) {
+        .item {
+        display: none;
+        }
+        .icon {
+        display: block;
+        }
+}
+
+@media screen and (min-width:836.1px){
+        .item {
+                display: block;
+                }
+        .icon {
+                display: none;
+                }
+        .hidden_item{
+                display: none;
+
+        }
+
+}

@@ -1,0 +1,166 @@
+/**{margin:0;padding: 0;}*/
+
+
+*{
+    box-sizing:border-box
+}
+
+span{
+text-transform: uppercase;
+color: crimson;
+}
+
+
+#navlist{
+margin: 0 auto;
+width: 100vw;
+background-color: #333;
+height: auto;
+position: fixed;
+top:0px;
+left:0px;
+z-index: 1000;
+
+}
+
+
+
+.menulist{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    /* position: fixed; */
+    z-index: 1000;
+    top: 0;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px ;
+}
+
+.head{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+
+.item{
+    float: right;
+}
+
+ul.menulist li{
+    display: inline-block;
+    padding: 14px 16px;
+
+}
+
+ul.menulist li a{
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+    color: white;
+
+}
+
+
+.item a:hover{
+    background-color: green;
+    /*padding: 5px 5px;*/
+}
+
+.title1{
+    position: fixed;
+    margin-top: 100px;
+    left: 100px;     /* 距离浏览器左边100px */
+    top: 200px;      /* 距离浏览器上边200px */
+}
+
+#foot{
+    margin: 0 auto;
+    width: 100vw;
+    background-color: #333;
+    height: auto;
+    position: fixed;
+    left:0px;
+    bottom:0px;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    /*margin-bottom: 0%;*/
+    background: #333;
+    text-align: center;
+    z-index: 9999;
+    max-width: 1280px;
+
+    }
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  vertical-align:middle;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/* <select> styles */
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+      no-repeat right 0.8em center / 1.4em;
+  color: white;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+

@@ -1,0 +1,133 @@
+/* 瀵� loading  鏁翠綋甯冨眬*/
+.loading-wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* loading 鍔ㄧ敾鍥惧儚鐖剁骇鐨勫竷灞€ */
+.loading-view {
+    height: 40px;
+    position: relative;
+}
+
+
+
+/*  */
+/* 1. 浠ヤ笅瀹炵幇type=1鐨勬牱寮�*/
+/*  */
+
+
+
+.container1,
+.container2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    /* border: 1px solid #ff0000; */
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+}
+
+.container2 {
+    transform: rotate(45deg);
+}
+
+.circle,
+.bounce {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* 璁剧疆灏忕悆鍔ㄧ敾 */
+    animation: loading 1.2s both infinite;
+}
+
+.circle {
+    position: absolute;
+}
+
+/* 璁剧疆灏忕悆鐨勭浉瀵逛綅缃� */
+.circle1 {
+    top: 0;
+    left: 0;
+}
+
+.circle2 {
+    top: 0;
+    right: 0;
+}
+
+.circle3 {
+    bottom: 0;
+    right: 0;
+}
+
+.circle4 {
+    bottom: 0;
+    left: 0;
+}
+
+/* 璁剧疆寤舵椂 */
+.container1 .circle1 {
+    animation-delay: 0s;
+}
+
+.container2 .circle1 {
+    animation-delay: 0.2s;
+}
+
+.container1 .circle2 {
+    animation-delay: 0.3s;
+}
+
+.container2 .circle2 {
+    animation-delay: 0.4s;
+}
+
+.container1 .circle3 {
+    animation-delay: 0.5s;
+}
+
+.container2 .circle3 {
+    animation-delay: 0.6s;
+}
+
+.container1 .circle4 {
+    animation-delay: 0.7s;
+}
+
+.container2 .circle5 {
+    animation-delay: 0.8s;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
