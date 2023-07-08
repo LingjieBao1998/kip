@@ -9,5 +9,4 @@ urlpatterns = [
     url(r"contact",views.contact),
     url(r"trysth",views.trysth),
     url(r'^molecule/([0-9]{1,3})$', views.molecule)
-
 ]

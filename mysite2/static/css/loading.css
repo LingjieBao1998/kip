@@ -1,4 +1,4 @@
-/* 瀵� loading  鏁翠綋甯冨眬*/
+/*loading*/
 .loading-wrapper {
     width: 100px;
     height: 100px;
@@ -15,20 +15,11 @@
     transform: translate(-50%, -50%);
 }
 
-
-/* loading 鍔ㄧ敾鍥惧儚鐖剁骇鐨勫竷灞€ */
+/* loading*/
 .loading-view {
     height: 40px;
     position: relative;
 }
-
-
-
-/*  */
-/* 1. 浠ヤ笅瀹炵幇type=1鐨勬牱寮�*/
-/*  */
-
-
 
 .container1,
 .container2 {
@@ -81,7 +72,7 @@
     left: 0;
 }
 
-/* 璁剧疆寤舵椂 */
+/**/
 .container1 .circle1 {
     animation-delay: 0s;
 }

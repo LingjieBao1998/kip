@@ -1,254 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Help</title>
-    <link rel="stylesheet" href="static/css/pleh02.css">
-    <link rel="stylesheet" href="static/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/loading.css">
-    <script type="text/javascript" language="javascript" src="static/js/loading.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/index.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/static/css/pleh02.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/loading.css" />
+    <script type="text/javascript" language="javascript" src="/static/js/loading.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
+  </head>
 
-    {# navbar #}
+  <body>
+    <!-- the bar of menu -->
     <div id="navlist">
-        <header>
-            <ul class="menulist">
-                <li class="head">
-                    <div id="name"><b>KIP</b>
-                        <div class="hidden_item" style="display: none">
-                             <a href="/kip"><i class="fa fa-home"></i> Home</a>
-                             <a href="submit"><i class="fa fa-upload"></i> Submit</a>
-                             <a href="help"><i class="fa fa-book"></i> Help</a>
-                             <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
-                        </div>
-                    </div>
-                </li>
-                <div class="item">
-                        <li><a href="/kip"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="submit"><i class="fa fa-upload"></i> Submit</a></li>
-                        <li><a href="help"><i class="fa fa-book"></i> Help</a></li>
-                        <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </div>
+      <header>
+        <ul class="menulist">
+          <li class="head">
+            <div id="name">
+              <b>KIP</b>
+              <div class="hidden_item" style="display: none">
+                <a href=""><i class="fa fa-home"></i> Home</a>
+                <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+                <a href="help"><i class="fa fa-book"></i> Help</a>
+                <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+              </div>
+            </div>
+          </li>
 
-                <div style="float: right">
-                    <li style="margin-top:  9px;"><button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button></li>
-                </div>
+          <!-- the bar of menu. Displaying when the screen size is small -->
+          <div class="item">
+            <li>
+              <a href=""><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+            </li>
+            <li>
+              <a href="help"><i class="fa fa-book"></i> Help</a>
+            </li>
+            <li>
+              <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+            </li>
+          </div>
 
-                
-            </ul>
-        </header>
+          <!-- toggler with the bar of menu when the screen size is small-->
+          <div style="float: right">
+            <li style="margin-top: 9px">
+              <button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button>
+            </li>
+          </div>
+        </ul>
+      </header>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Separator -->
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <div class="wrapper" style="opacity: 1;
-                                display:block;
-                                ">
-        <div class="loading-wrapper" style="z-index:1002;
-                                            position:fixed
-                                            "><div class="loading-view">
-            <div class="container1">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-            <div class="container2">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-        </div><div class="tip-view">loading</div></div>
+    <!-- the loading animation before entering in web -->
+    <div class="wrapper" style="opacity: 1; display: block">
+      <div class="loading-wrapper" style="z-index: 1002; position: fixed">
+        <div class="loading-view">
+          <div class="container1">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+          <div class="container2">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+        </div>
+        <div class="tip-view">loading</div>
+      </div>
     </div>
 
     <div class="all">
-        <div>
-            <div class="header">A friendly reminder:  click the title to show help.</div>
-        </div>
+      <div>
+        <div class="header">A friendly reminder: click the title to show help.</div>
+      </div>
 
-        <div>
-            <div class="module">Dataset</div>
-            <div class="view">
-                <div class="large_pirecture"><img src="static/img/Dataset.png" alt="Dataset.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Dataset(2).png" alt="Dataset.png"><br><br></div>
-                <div class="description">
-                    <p><span class="number">①③④</span>: <b class="tab">Classification tasks datasets</b>.
-                     In the <b class="tab">Classification tasks datasets</b>, data points are presented as a two-dimensional matrix, where columns represent different protein kinases represented by <b class="token">UniProt ID</b> and rows represent different molecules represented by <b class="token">canonical SMILES</b>.
-                     The inhibitory activity points of molecules against protein kinases are collected and recorded in the two-dimensional matrix. In the two-dimensional matrix of <b class="tab">Classification tasks datasets</b>, 
-                     <b class="token">"1"</b> indicates that there is positive inhibitory interaction <b class="token">(pKi/pKd/pIC50&ge;6)</b> between small molecule and Kinase protein, 
-                     <b class="token">"0"</b> indicates that there is negative inhibitory interaction <b class="token">(pKi/pKd/pIC50&lt;6)</b> between small molecule and Kinase protein, 
-                     and <b class="token">"Null"</b> indicates that no corresponding data has been collected.</p>
-                    <p><span class="number">②</span>: <b class="tab">Regression tasks datasets</b>. 
-                    In the <b class="tab">Regression tasks datasets</b>, data points are presented as a two-dimensional matrix, where columns represent different protein kinases represented by <b class="token">UniProt ID</b> and rows represent different molecules represented by <b class="token">canonical SMILES</b>.
-                    the inhibitory activity points of molecules against protein kinases are collected and recorded in the two-dimensional matrix.
-                    In the two-dimensional matrix of <b class="tab">Regression tasks datasets</b>, all activity points (IC50) are converted to <b class="token">Negative logarithm (pIC50)</b>, and <b class="token">"Null"</b> indicates that no corresponding data has been collected.
-                    </p>
-                    <p><span class="number">⑤</span>: <b class="tab">The details of protein kinases in datasets</b>. This file contains the information of <b class="token">UniProt ID, Group, Family, Name,
-                    and Symbol</b> about protein kinases.</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="module">Submit</div>
-            <div class="view">
-                <div class="large_pirecture"><img src="static/img/Submit.png" alt="Submit.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Submit(2).png" alt="Submit.png"><br><br></div>
-                <div class="description">
-                    <p><span class="number">①</span>: <b class="tab">ChemDoodle Panel</b>. Draw a molecule on it and then submit it to <b>SMILES</b> by <b class="tab">Submit By Drawing Button</b>.</p>
-                    <p><span class="number">②</span>: <b class="tab">Submit By Drawing Button</b>.Submit <b>molecule</b> in <b class="tab">ChemDoodle Panel</b> to the server, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>invalid SMILES</b>.</p>
-                    <p><span class="number">③</span>: <b class="tab">SMILES Input Window</b>. Input <b>SMILES</b> manually on <b class="tab">SMILES Input Window</b>.</p>
-                    <p><span class="number">④</span>: <b class="tab">Example SMILES Button</b>. An <b>Example SMILES</b> is provided for trial.</p>
-                    <p><span class="number">⑤</span>: <b class="tab">Reset SMILES Button</b>. Clear anything in <b class="tab">SMILES Input Window</b>.</p>
-                    <p><span class="number">⑥</span>: <b class="tab">Submit SMILES Button</b>. Submit <b>SMILES</b> in <b class="tab">SMILES Input Window</b> to the server, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>invalid SMILES</b>.</p>
-                    <p><span class="number">⑦</span>: <b class="tab">File Input Window</b>. Input <b>SDF File or CSV File</b> manually on <b class="tab">File Input Window</b>.</p>
-                    <p><span class="number">⑧</span>: <b class="tab">Example CSV File</b>. An <b>Example CSV File</b> is provided for trial. (The <b>Example CSV File</b> contains a wrong SMILES for illustration.)</p>
-                    <p><span class="number">⑨</span>: <b class="tab">Example SDF File</b>. An <b>Example SDF File</b> is provided for trial.</p>
-                    <p><span class="number">⑩</span>: <b class="tab">Submit File Button</b>. Submit the <b>file</b> in <b class="tab">File Input Window</b> to the server, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>Invalid molecules</b> in the file.</p>
-                    <hr>
-                    
-		    <p><h4 class="pattern">Input Molecule By Drawing</h4>&nbsp&nbspYou can draw a molecule in <b class="tab">ChemDoodle Panel</b> and then submit it to the server by <b class="tab">Submit By Drawing Button</b>, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for the <b>invalid molecule</b>.</p>
-                    <hr>
-                    <p><h4 class="pattern">Input SMILES</h4>You can input SMILES manually on <b class="tab">SMILES Input Window</b>.
-                          With a SMILES in <b class="tab">SMILES Input Window</b>, you can submit it to the server and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>invalid SMILES</b>.</p>
-                    <hr>
-                    <p><h4 class="pattern">Input File</h4>&nbsp&nbspYou can click on <b class="tab">File Input Window</b> and input a <b>CSV File</b> or <b>SDF File</b>. 
-                        <b class="note">The CSV File must contain SMILES with the header named smiles</b>.<b> (An <b class="tab">Example CSV File</b> is provided for illustration.)</b> Only <b>one file</b> is available in <b class="tab">File Input Window</b>, and if multiple files are provided <b>only the last file</b> is available.
-                        With one file in <b class="tab">File Input Window</b>, you can submit it to the server and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>Invalid molecules</b>.
-                    </p>
-                    <hr>
-
-                    <p>If you have <b>multiple molecules</b> for computation, We recommend you pack them all together into an <b>SDF</b> file or a <b>CSV</b> file and then submit.</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="module">Result For All Molecules</div>
-            <div class="view">
-                <div class="large_pirecture"><img src="static/img/Result.png" alt="Result.png"><br><br></div>
-                <div class="large_pirecture"><img src="static/img/Result(3).png" alt="invalid.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Result(2).png" alt="Result.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Result(4).png" alt="invalid.png"><br><br></div>
-                <div class="description">
-                    <p><span class="number">①</span>: <b class="tab">Overall Table</b>. The number of valid SMILES and the number of invalid SMILES are shown here.</p>
-                    <p><span class="number">②</span>: <b class="tab">result.csv File</b>. The <b class="tab">result.csv File</b> contains results of the prediction probability of the inhibitory activity of valid SMILES against different protein kinases. In the <b class="tab">result.csv File</b>, the first column is <b>original SMILES</b> you uploaded, 
-                    the second column is <b>canonical SMILES</b> transformed by <b>original SMILES</b> through desolvation and desalting, and the rest columns are <b>prediction probability of inhibitory activity of valid SMILES</b> against different protein kinases, ranging from 0 to 1. 
-                    You can <b class="graph_action">download</b> this file by <b class="graph_action">clicking</b> on it to view some details.</p>
-                    <p><span class="number">③</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, 2D Structure with SMILES, and <b class="tab">View Button</b></b>.</p>
-                    <p><span class="number">④</span>: <b class="tab">Search Window</b>. Search <b>SMILES</b> by keywords.</p>
-                    <p><span class="number">⑤</span>: <b class="tab">View Button</b>. Click on this button and the <b class="page">Molecule Page</b> will pop up, you can view details of <b>the prediction probability of inhibitory activity of this molecule</b> against protein kinases in the <b class="page">Molecule Page</b>.</p>
-                    <p><span class="number">⑥</span>: <b class="tab">invalid.csv File</b>. The <b>invalid SMILES</b> are shown in this files. You can <b class="graph_action">download</b> this file by <b class="graph_action">clicking</b> on it to check some errors in your input file.</p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div>
-            <div class="module">Detail For Single Molecule</div>
-            <div class="view">
-                <div class="large_pirecture"><img src="static/img/Molecule.png" alt="Molecule.png"><br><br></div>
-                <div class="large_pirecture"><img src="static/img/Molecule(3).png" alt="Molecule_Detail.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Molecule(2).png" alt="Molecule.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Molecule(4).png" alt="Molecule_Detail.png"><br><br></div>
-                <div class="description">
-                    <p><span class="number">①</span>: <b class="tab">2D Structure</b>.</p>
-                    <p><span class="number">②</span>: <b class="tab">Histogram of Inhibitory Activity against Group</b>. The results of the prediction probability of inhibitory activity of the molecule against <b>protein kinases groups</b> are shown here. You can <b class="graph_action">hover</b> on it to check some details 
-                    and it will return the number of the predicted positive interactions of the small molecule against protein kinases in the same group <b class="threshold">(threshold &ge; 0.5)</b>.</p>
-                    <p class="large_pirecture"><span class="number">③</span>: <b class="tab">Sunburst Chart of Inhibitory Activity against protein kinases</b>. The results of the prediction probability of inhibitory activity of the molecule against kinases are shown here. You can <b class="graph_action">click</b> on it to check some details.</p>
-                    <p><span class="number">④</span>: <b class="tab">result_1.csv File</b>. This file contains the results of the prediction probability of inhibitory activity of the molecule against protein kinases. for every row in file, it contains the information of <b>UniProt ID, Group, Family, Name, and Symbol of protein kinases and the prediction probability</b>. You can <b class="graph_action">download</b> this file by <b class="graph_action">clicking</b> on it to view the results.</p>
-                    <p class="large_pirecture"><span class="number">⑤</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Name(Symbol), Group, Family, the prediction probability, and the <b class="tab">Explanation Button</b></b>.</p>
-                    <p class="small_pirecture"><span class="number">⑤</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Symbol, Group, Family, the prediction probability, and the <b class="tab">Explanation Button</b></b>.</p>
-                    <p><span class="number">⑥</span>: <b class="tab">Search Window</b>. Search <b>protein kinases</b> by keywords.</p>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <div>
-            <div class="module">Explanation</div>
-            <div class="view">
-                <div class="care">
-                    <b>
-                        <div>&nbsp&nbspAttention!!! This explanation result is just to help us understand the decision-making behavior of the model and increase the transparency of the model. 
-                            It may be a little inconsistent with the real situation but may provide some new insights for chemists.
-                        </div>
-
-                        <div>
-                        &nbsp&nbsp Only the results predicted to be <b class="token" style="background-color: yellow;">positive</b> are explained. 
-                        It is not recommended to interpret the results with low prediction probability. Otherwise, it may gain strange explanation results.
-                        </div>
-                    </b>
-                </div>
-                <h3>Explanation for Single result</h3>
-                <div class="large_pirecture"><img src="static/img/Explain.png" alt="Explain.png"><br><br></div>
-                <div class="large_pirecture"><img src="static/img/Explain(3).png" alt="Explain_result.png"><br><br></div>
-                
-                <div class="small_pirecture"><img src="static/img/Explain(2).png" alt="Explain.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Explain(4).png" alt="Explain_result.png"><br><br></div>
-                <div class="description">
-                    <p><span class="number">①</span>: <b class="tab">Explanation Button</b>. Click on it and it will return the <b class="tab">Explanation Result Table</b>.</p>
-                    <p><span class="number">②</span>: <b class="tab">Explanation Result Table</b>. The top half of the table contains basical information about this protein kinase and the Prediction probability of the inhibitory activity of the molecule against this protein kinase.
-                    The rest of the table shows the explanation result towards the output of the model. In the explanation result, the <b>darker</b> the color of the atom, the more important the chemical environment around the atom contributes to the output  of the model.
-                    </p>
-                </div>
-
-                <h3>Explanation for Group</h3>
-                <div class="large_pirecture"><img src="static/img/Explain(5).png" alt="Explain_for_group.png"><br><br></div>
-                <div class="small_pirecture"><img src="static/img/Explain(6).png" alt="Explain_for_group.png"><br><br></div>
-                <div class="description">
-                    <p><span class="number">①</span>: <b class="tab">Threshold Selectbox</b>. Select <b>threshold</b> for explanation. Only the prediction probability of inhibitory activities against protein kinases greater than or equal to threshold are provided for explanation. we recommend 0.7 as the threshold for explanation</p>
-                    <p><span class="number">②</span>: <b class="tab">Group Selectbox</b>. Select <b>kinases group</b> for explanation. There are 10 options in in the selection box, including <b>AGC, Atypical, CK1, CAMK, CMGC, Other, STE, TKL, TK and ALL.</b> 
-                    If you choose <b class="token">ALL</b> in this select box, it will take <b>much time</b> to generate explanation results for <b>all kinases groups</b>. Otherwise, it only provides explanations for one kinase group.
-                    </p>
-                    <p><span class="number">③</span>: <b class="tab">Submit Button</b>. Submit <b>threshold</b> and <b>group</b> you selected to the server, and the server will return the explanation results.</p>
-                    <p class="large_pirecture"><span class="number">④</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Name(Symobl), Group, Family, Prediction probability, and <b class="tab">Explanation Button</b></b>.</p>
-                    <p class="small_pirecture"><span class="number">④</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Symobl, Group, Family, Prediction probability, and <b class="tab">Explanation Button</b></b>.</p>
-                    <p><span class="number">⑤</span>: <b class="tab">Search Window</b>. Search <b>protein kinases</b> by keywords.</p>
-                    <p><span class="number">⑥</span>: <b class="tab">Explanation Result</b>. In the explanation result, the <b>darker</b> the color of the atom, the more important the chemical environment around the atom contributes to the output  of the model.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <br>
-    <br>
-    <br>
-
-    <div id="foot">
-        <footer>
+      <!-- the detail of dataset -->
+      <div>
+        <div class="module">Dataset</div>
+        <div class="view">
+          <div class="large_pirecture"><img src="/static/img/Dataset.png" alt="Dataset.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Dataset(2).png" alt="Dataset.png" /><br /><br /></div>
+          <div class="description">
             <p>
-            © 2021 Tingjun Hou's Group. All Rights Reserved.
+              <span class="number">①③④</span>: <b class="tab">Classification tasks datasets</b>. In the <b class="tab">Classification tasks datasets</b>, data points are presented as a two-dimensional matrix, where columns represent different protein kinases represented by
+              <b class="token">UniProt ID</b> and rows represent different molecules represented by <b class="token">canonical SMILES</b>. The inhibitory activity points of molecules against protein kinases are collected and recorded in the two-dimensional matrix. In the two-dimensional matrix of
+              <b class="tab">Classification tasks datasets</b>, <b class="token">"1"</b> indicates that there is positive inhibitory interaction <b class="token">(pKi/pKd/pIC50&ge;6)</b> between small molecule and Kinase protein, <b class="token">"0"</b> indicates that there is negative inhibitory
+              interaction <b class="token">(pKi/pKd/pIC50&lt;6)</b> between small molecule and Kinase protein, and <b class="token">"Null"</b> indicates that no corresponding data has been collected.
             </p>
-        </footer>
+            <p>
+              <span class="number">②</span>: <b class="tab">Regression tasks datasets</b>. In the <b class="tab">Regression tasks datasets</b>, data points are presented as a two-dimensional matrix, where columns represent different protein kinases represented by <b class="token">UniProt ID</b> and
+              rows represent different molecules represented by <b class="token">canonical SMILES</b>. the inhibitory activity points of molecules against protein kinases are collected and recorded in the two-dimensional matrix. In the two-dimensional matrix of
+              <b class="tab">Regression tasks datasets</b>, all activity points (IC50) are converted to <b class="token">Negative logarithm (pIC50)</b>, and <b class="token">"Null"</b> indicates that no corresponding data has been collected.
+            </p>
+            <p><span class="number">⑤</span>: <b class="tab">The details of protein kinases in datasets</b>. This file contains the information of <b class="token">UniProt ID, Group, Family, Name, and Symbol</b> about protein kinases.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- the detail of submitation -->
+      <div>
+        <div class="module">Submit</div>
+        <div class="view">
+          <div class="large_pirecture"><img src="/static/img/Submit.png" alt="Submit.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Submit(2).png" alt="Submit.png" /><br /><br /></div>
+          <div class="description"></div>
+            <p><span class="number">①</span>: <b class="tab">ChemDoodle Panel</b>. Draw a molecule on it and then submit it to <b>SMILES</b> by <b class="tab">Submit By Drawing Button</b>.</p>
+            <p><span class="number">②</span>: <b class="tab">Submit By Drawing Button</b>.Submit <b>molecule</b> in <b class="tab">ChemDoodle Panel</b> to the server, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>invalid SMILES</b>.</p>
+            <p><span class="number">③</span>: <b class="tab">SMILES Input Window</b>. Input <b>SMILES</b> manually on <b class="tab">SMILES Input Window</b>.</p>
+            <p><span class="number">④</span>: <b class="tab">Example SMILES Button</b>. An <b>Example SMILES</b> is provided for trial.</p>
+            <p><span class="number">⑤</span>: <b class="tab">Reset SMILES Button</b>. Clear anything in <b class="tab">SMILES Input Window</b>.</p>
+            <p><span class="number">⑥</span>: <b class="tab">Submit SMILES Button</b>. Submit <b>SMILES</b> in <b class="tab">SMILES Input Window</b> to the server, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>invalid SMILES</b>.</p>
+            <p><span class="number">⑦</span>: <b class="tab">File Input Window</b>. Input <b>SDF File or CSV File</b> manually on <b class="tab">File Input Window</b>.</p>
+            <p><span class="number">⑧</span>: <b class="tab">Example CSV File</b>. An <b>Example CSV File</b> is provided for trial. (The <b>Example CSV File</b> contains a wrong SMILES for illustration.)</p>
+            <p><span class="number">⑨</span>: <b class="tab">Example SDF File</b>. An <b>Example SDF File</b> is provided for trial.</p>
+            <p><span class="number">⑩</span>: <b class="tab">Submit File Button</b>. Submit the <b>file</b> in <b class="tab">File Input Window</b> to the server, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>Invalid molecules</b> in the file.</p>
+            <hr>
+            <p><h4 class="pattern">Input Molecule By Drawing</h4>&nbsp&nbspYou can draw a molecule in <b class="tab">ChemDoodle Panel</b> and then submit it to the server by <b class="tab">Submit By Drawing Button</b>, and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for the <b>invalid molecule</b>.</p>
+            <hr>
+            <p><h4 class="pattern">Input SMILES</h4>You can input SMILES manually on <b class="tab">SMILES Input Window</b>.
+                    With a SMILES in <b class="tab">SMILES Input Window</b>, you can submit it to the server and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>invalid SMILES</b>.</p>
+            <hr>
+            <p><h4 class="pattern">Input File</h4>&nbsp&nbspYou can click on <b class="tab">File Input Window</b> and input a <b>CSV File</b> or <b>SDF File</b>. 
+                <b class="note">The CSV File must contain SMILES with the header named smiles</b>.<b> (An <b class="tab">Example CSV File</b> is provided for illustration.)</b> Only <b>one file</b> is available in <b class="tab">File Input Window</b>, and if multiple files are provided <b>only the last file</b> is available.
+                With one file in <b class="tab">File Input Window</b>, you can submit it to the server and the server will return the <b class="page">Result Page</b> or <b class="invalid">some alerts</b> for <b>Invalid molecules</b>.
+            </p>
+            <hr>
+
+            <p>If you have <b>multiple molecules</b> for computation, We recommend you pack them all together into an <b>SDF</b> file or a <b>CSV</b> file and then submit.</p>
+        </div>
+      </div>
+      
+      <!-- the detail of result for all molecules-->
+      <div>
+        <div class="module">Result For All Molecules</div>
+        <div class="view">
+          <div class="large_pirecture"><img src="/static/img/Result.png" alt="Result.png" /><br /><br /></div>
+          <div class="large_pirecture"><img src="/static/img/Result(3).png" alt="invalid.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Result(2).png" alt="Result.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Result(4).png" alt="invalid.png" /><br /><br /></div>
+          <div class="description">
+            <p><span class="number">①</span>: <b class="tab">Overall Table</b>. The number of valid SMILES and the number of invalid SMILES are shown here.</p>
+            <p>
+              <span class="number">②</span>: <b class="tab">result.csv File</b>. The <b class="tab">result.csv File</b> contains results of the prediction probability of the inhibitory activity of valid SMILES against different protein kinases. In the <b class="tab">result.csv File</b>, the first
+              column is <b>original SMILES</b> you uploaded, the second column is <b>canonical SMILES</b> transformed by <b>original SMILES</b> through desolvation and desalting, and the rest columns are <b>prediction probability of inhibitory activity of valid SMILES</b> against different protein
+              kinases, ranging from 0 to 1. You can <b class="graph_action">download</b> this file by <b class="graph_action">clicking</b> on it to view some details.
+            </p>
+            <p>
+              <span class="number">③</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, 2D Structure with SMILES, and <b class="tab">View Button</b></b>.
+            </p>
+            <p><span class="number">④</span>: <b class="tab">Search Window</b>. Search <b>SMILES</b> by keywords.</p>
+            <p>
+              <span class="number">⑤</span>: <b class="tab">View Button</b>. Click on this button and the <b class="page">Molecule Page</b> will pop up, you can view details of <b>the prediction probability of inhibitory activity of this molecule</b> against protein kinases in the
+              <b class="page">Molecule Page</b>.
+            </p>
+            <p><span class="number">⑥</span>: <b class="tab">invalid.csv File</b>. The <b>invalid SMILES</b> are shown in this files. You can <b class="graph_action">download</b> this file by <b class="graph_action">clicking</b> on it to check some errors in your input file.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- the detail of result for single molecule-->
+      <div>
+        <div class="module">Detail For Single Molecule</div>
+        <div class="view">
+          <div class="large_pirecture"><img src="/static/img/Molecule.png" alt="Molecule.png" /><br /><br /></div>
+          <div class="large_pirecture"><img src="/static/img/Molecule(3).png" alt="Molecule_Detail.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Molecule(2).png" alt="Molecule.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Molecule(4).png" alt="Molecule_Detail.png" /><br /><br /></div>
+          <div class="description">
+            <p><span class="number">①</span>: <b class="tab">2D Structure</b>.</p>
+            <p>
+              <span class="number">②</span>: <b class="tab">Histogram of Inhibitory Activity against Group</b>. The results of the prediction probability of inhibitory activity of the molecule against <b>protein kinases groups</b> are shown here. You can <b class="graph_action">hover</b> on it to
+              check some details and it will return the number of the predicted positive interactions of the small molecule against protein kinases in the same group <b class="threshold">(threshold &ge; 0.5)</b>.
+            </p>
+            <p class="large_pirecture">
+              <span class="number">③</span>: <b class="tab">Sunburst Chart of Inhibitory Activity against protein kinases</b>. The results of the prediction probability of inhibitory activity of the molecule against kinases are shown here. You can <b class="graph_action">click</b> on it to check
+              some details.
+            </p>
+            <p>
+              <span class="number">④</span>: <b class="tab">result_1.csv File</b>. This file contains the results of the prediction probability of inhibitory activity of the molecule against protein kinases. for every row in file, it contains the information of
+              <b>UniProt ID, Group, Family, Name, and Symbol of protein kinases and the prediction probability</b>. You can <b class="graph_action">download</b> this file by <b class="graph_action">clicking</b> on it to view the results.
+            </p>
+            <p class="large_pirecture">
+              <span class="number">⑤</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Name(Symbol), Group, Family, the prediction probability, and the <b class="tab">Explanation Button</b></b>.
+            </p>
+            <p class="small_pirecture">
+              <span class="number">⑤</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Symbol, Group, Family, the prediction probability, and the <b class="tab">Explanation Button</b></b>.
+            </p>
+            <p><span class="number">⑥</span>: <b class="tab">Search Window</b>. Search <b>protein kinases</b> by keywords.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- the detail of Explanation-->
+      <div>
+        <div class="module">Explanation</div>
+        <div class="view">
+          <div class="care">
+            <b>
+              <div>&nbsp&nbspAttention!!! This explanation result is just to help us understand the decision-making behavior of the model and increase the transparency of the model. It may be a little inconsistent with the real situation but may provide some new insights for chemists.</div>
+
+              <div>&nbsp&nbsp Only the results predicted to be <b class="token" style="background-color: yellow">positive</b> are explained. It is not recommended to interpret the results with low prediction probability. Otherwise, it may gain strange explanation results.</div>
+            </b>
+          </div>
+          <h3>Explanation for Single result</h3>
+          <div class="large_pirecture"><img src="/static/img/Explain.png" alt="Explain.png" /><br /><br /></div>
+          <div class="large_pirecture"><img src="/static/img/Explain(3).png" alt="Explain_result.png" /><br /><br /></div>
+
+          <div class="small_pirecture"><img src="/static/img/Explain(2).png" alt="Explain.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Explain(4).png" alt="Explain_result.png" /><br /><br /></div>
+          <div class="description">
+            <p><span class="number">①</span>: <b class="tab">Explanation Button</b>. Click on it and it will return the <b class="tab">Explanation Result Table</b>.</p>
+            <p>
+              <span class="number">②</span>: <b class="tab">Explanation Result Table</b>. The top half of the table contains basical information about this protein kinase and the Prediction probability of the inhibitory activity of the molecule against this protein kinase. The rest of the table
+              shows the explanation result towards the output of the model. In the explanation result, the <b>darker</b> the color of the atom, the more important the chemical environment around the atom contributes to the output of the model.
+            </p>
+          </div>
+
+          <h3>Explanation for Group</h3>
+          <div class="large_pirecture"><img src="/static/img/Explain(5).png" alt="Explain_for_group.png" /><br /><br /></div>
+          <div class="small_pirecture"><img src="/static/img/Explain(6).png" alt="Explain_for_group.png" /><br /><br /></div>
+          <div class="description">
+            <p>
+              <span class="number">①</span>: <b class="tab">Threshold Selectbox</b>. Select <b>threshold</b> for explanation. Only the prediction probability of inhibitory activities against protein kinases greater than or equal to threshold are provided for explanation. we recommend 0.7 as the
+              threshold for explanation
+            </p>
+            <p>
+              <span class="number">②</span>: <b class="tab">Group Selectbox</b>. Select <b>kinases group</b> for explanation. There are 10 options in in the selection box, including <b>AGC, Atypical, CK1, CAMK, CMGC, Other, STE, TKL, TK and ALL.</b> If you choose <b class="token">ALL</b> in this
+              select box, it will take <b>much time</b> to generate explanation results for <b>all kinases groups</b>. Otherwise, it only provides explanations for one kinase group.
+            </p>
+            <p><span class="number">③</span>: <b class="tab">Submit Button</b>. Submit <b>threshold</b> and <b>group</b> you selected to the server, and the server will return the explanation results.</p>
+            <p class="large_pirecture">
+              <span class="number">④</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Name(Symobl), Group, Family, Prediction probability, and <b class="tab">Explanation Button</b></b>.
+            </p>
+            <p class="small_pirecture">
+              <span class="number">④</span>: <b class="tab">Result Table</b>. For every row in the <b class="tab">Result Table</b>, it contains <b> Index, UniProt id, Protein Symobl, Group, Family, Prediction probability, and <b class="tab">Explanation Button</b></b>.
+            </p>
+            <p><span class="number">⑤</span>: <b class="tab">Search Window</b>. Search <b>protein kinases</b> by keywords.</p>
+            <p><span class="number">⑥</span>: <b class="tab">Explanation Result</b>. In the explanation result, the <b>darker</b> the color of the atom, the more important the chemical environment around the atom contributes to the output of the model.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-</body>
-    <script>
-        $(document).ready( function(){
-	    $(".wrapper").hide(500);
-            $("#hidden_item_btn").on("click",function(){
-                $(".hidden_item").toggle();
-            });
+    <!-- Separator -->
+    <br />
+    <br />
+    <br />
 
-            $(".module").on("click",function(){
-                $(this).siblings(".view").toggle(1000);
-            });
+    <!-- the footer of website -->
+    <div id="foot">
+      <footer>
+        <p>© 2021 Tingjun Hou's Group. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
 
+  <script>
+    $(document).ready(function () {
+      // the funtion of loading animation before entering in web
+      $(".wrapper").hide(500);
+      
+      // the funtion of toggler with the bar of menu
+      $("#hidden_item_btn").on("click", function () {
+        $(".hidden_item").toggle();
+      });
 
-        })
-    </script>
+      // the funtion of showing detail of different website
+      $(".module").on("click", function () {
+        $(this).siblings(".view").toggle(1000);
+      });
+    });
+  </script>
 </html>

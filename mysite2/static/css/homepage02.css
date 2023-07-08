@@ -1,129 +1,123 @@
 /**{margin:0;padding: 0;}*/
 
-*{
-        box-sizing:border-box;
-	
+* {
+        box-sizing: border-box;
+
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
         box-sizing: border-box;
-       }
+}
 
-body{
+body {
         margin: 0 auto;
         max-width: 1280px;
         line-height: 1.5;
         font-size: 1.1rem;
-
 }
 
-#name{
+#name {
         text-transform: uppercase;
         color: crimson;
 }
 
-
-#navlist{
+#navlist {
         margin: 0 auto;
         width: 100vw;
         background-color: #333;
         height: auto;
         position: fixed;
-        top:0px;
-        left:0px;
+        top: 0px;
+        left: 0px;
         z-index: 1000;
         font-size: 1.5rem;
         text-align: center;
-        }
+}
 
-.head{
+.head {
         padding: 14px 16px;
 }
-        
-        
-        
-.menulist{
-            list-style-type: none;
-            overflow: hidden;
-            background-color: #333;
-            /* position: fixed; */
-            z-index: 1000;
-            top: 0;
-            margin: 0 auto;
-            width: 100vw;
-            height: auto;
-            max-width: 1280px;
-            margin: 0 auto;
-            width:95%;
-            padding:0px;
+
+.menulist {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+        /* position: fixed; */
+        z-index: 1000;
+        top: 0;
+        margin: 0 auto;
+        width: 100vw;
+        height: auto;
+        max-width: 1280px;
+        margin: 0 auto;
+        width: 95%;
+        padding: 0px;
 }
 
-.head{
+.head {
         float: left;
 }
 
-.item,.icon{
+.item,
+.icon {
         float: right;
 }
 
-ul.menulist li{
+ul.menulist li {
         display: inline-block;
         padding: 14px 16px;
 
 }
 
-ul.menulist li a{
+ul.menulist li a {
         text-decoration: none;
         text-align: center;
         color: white;
         padding: 14px 16px;
 }
 
-
-.item a:hover{
+.item a:hover {
         background-color: green;
         /*padding: 5px 5px;*/
 }
 
-.hidden_item a:hover{
+.hidden_item a:hover {
         background-color: green;
         /*padding: 5px 5px;*/
 }
 
-.hidden_item,.item a{
+.hidden_item,
+.item a {
         text-decoration: none;
         color: white;
 }
 
-.hidden_item{
-        padding:6px,7px;
+.hidden_item {
+        padding: 6px, 7px;
         font-size: 0.5em;
         line-height: 0.5;
-        right:10px;
+        right: 10px;
 }
 
-
-.hidden_item{
+.hidden_item {
         display: flex;
         padding: 0;
         flex-direction: column;
         background-color: #333;
         position: absolute;
         font-size: 0.5em;
-        
 }
 
 .icon {
         display: none;
         text-align: center;
-        cursor:pointer;
-        flex:right
+        cursor: pointer;
+        flex: right
 }
 
-
-
-
-#description{
+#description {
         text-align: center;
         background-color: whitesmoke;
         border-radius: 0.5em;
@@ -132,24 +126,21 @@ ul.menulist li a{
         border: 1px solid white;
         margin: 0 auto;
         padding: 1.25em;
-        width:100%;
+        width: 100%;
         font-size: 1.25rem;
 }
 
-
-
-
-#foot{
+#foot {
         margin: 0 auto;
         width: 100vw;
         background-color: #333;
         height: auto;
         position: fixed;
-        left:0px;
-        bottom:0px;
-	font-size: 1.0rem;
-    }
-    
+        left: 0px;
+        bottom: 0px;
+        font-size: 1.0rem;
+}
+
 footer {
         width: 100%;
         color: white;
@@ -159,10 +150,9 @@ footer {
         text-align: center;
         z-index: 9999;
         max-width: 1280px;
-    
-        }
+}
 
-.subtitle{
+.subtitle {
         word-break: break-all;
         text-align: left;
         background: #333;
@@ -174,55 +164,53 @@ footer {
         border-radius: 0.25em;
         margin: 0 auto;
         color: crimson;
-        width:100%;
-        }
+        width: 100%;
+}
 
-
-
-table{
+table {
         margin: auto;
         word-break: break-all;
-        word-wrap: break-word; 
-        width:100%;
-        border-collapse:collapse;
+        word-wrap: break-word;
+        width: 100%;
+        border-collapse: collapse;
         text-align: center;
-	font-size: 1.0rem;
-        }
-            
-            
-            
+        font-size: 1.0rem;
+}
+
 /*设置表头*/
 table thead tr {
-        background-color:#333;
+        background-color: #333;
         color: crimson;
         font-weight: bold;
 }
-            
-table th,table td {
+
+table th,
+table td {
         padding: 12px 15px;
 }
-            
+
 /*表格底部线*/
 table tbody tr {
-border-bottom: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
 }
-            
+
 table tbody tr:nth-of-type(even) {
         background-color: #f3f3f3;
 }
-            
+
 table tbody tr:last-of-type {
         border-bottom: 2px solid black;
 }
-            
+
 table tbody tr:hover {
         background-color: lightgrey;
 }
 
 .first_column {
-        font-weight:bold ;
+        font-weight: bold;
 }
-.download_item{
+
+.download_item {
 
         display: flex;
         flex-direction: row;
@@ -233,32 +221,33 @@ table tbody tr:hover {
 }
 
 .download_item a {
-        font-weight:bold ;
+        font-weight: bold;
         text-decoration: none;
         color: crimson;
-        
-}
 
+}
 
 @media only screen and (max-width: 836px) {
         .item {
-        display: none;
+                display: none;
         }
+
         .icon {
-        display: block;
+                display: block;
         }
 }
 
-@media screen and (min-width:836.1px){
+@media screen and (min-width:836.1px) {
         .item {
                 display: block;
-                }
+        }
+
         .icon {
                 display: none;
-                }
-        .hidden_item{
-                display: none;
+        }
 
+        .hidden_item {
+                display: none;
         }
 
 }

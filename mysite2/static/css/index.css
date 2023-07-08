@@ -3,21 +3,21 @@
     margin: 0;
 } */
 
-body{
+body {
     /* background-image: url("../images/bg.png"); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.list{
+.list {
     list-style: none;
 }
 
-.list li{
+.list li {
     height: 100px;
     width: 100px;
     border-radius: 10px;
-    background-color: rgba(0,0,255,0.5);
+    background-color: rgba(0, 0, 255, 0.5);
     float: left;
     margin: 10px;
     line-height: 100px;

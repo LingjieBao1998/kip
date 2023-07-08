@@ -1,129 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact</title>
-    <link rel="stylesheet" href="static/css/mail02.css">
-    <link rel="stylesheet" href="static/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/loading.css">
-    <script type="text/javascript" language="javascript" src="static/js/loading.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/index.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jsme/jsme.nocache.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/static/css/mail02.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/loading.css" />
+    <script type="text/javascript" language="javascript" src="/static/js/loading.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jsme/jsme.nocache.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
+  </head>
+  <body>
 
-    {# navbar #}
+    <!-- the bar of menu -->
     <div id="navlist">
-        <header>
-            <ul class="menulist">
-                <li class="head">
-                    <div id="name"><b>KIP</b>
-                        <div class="hidden_item" style="display:none">
-                             <a href="/kip"><i class="fa fa-home"></i> Home</a>
-                             <a href="submit"><i class="fa fa-upload"></i> Submit</a>
-                             <a href="help"><i class="fa fa-book"></i> Help</a>
-                             <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
-                        </div>
-                    </div>
-                </li>
-                <div class="item">
-                        <li><a href="/kip"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="submit"><i class="fa fa-upload"></i> Submit</a></li>
-                        <li><a href="help"><i class="fa fa-book"></i> Help</a></li>
-                        <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </div>
-
-                <div style="float:right">
-                    <li style="margin-top: 9px;"><button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button></li>
-                </div>
-
-                
-            </ul>
-        </header>
+      <header>
+        <ul class="menulist">
+          <li class="head">
+            <div id="name">
+              <b>KIP</b>
+              <div class="hidden_item" style="display: none">
+                <a href=""><i class="fa fa-home"></i> Home</a>
+                <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+                <a href="help"><i class="fa fa-book"></i> Help</a>
+                <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+              </div>
+            </div>
+          </li>
+          
+          <!-- the bar of menu. Displaying when the screen size is small -->
+          <div class="item">
+            <li>
+              <a href=""><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+            </li>
+            <li>
+              <a href="help"><i class="fa fa-book"></i> Help</a>
+            </li>
+            <li>
+              <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+            </li>
+          </div>
+          
+          <!-- toggler with the bar of menu when the screen size is small-->
+          <div style="float: right">
+            <li style="margin-top: 9px">
+              <button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button>
+            </li>
+          </div>
+        </ul>
+      </header>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Separator -->
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <div class="wrapper" style="opacity: 1;
-                                display:block;
-                                ">
-        <div class="loading-wrapper" style="z-index:1002;
-                                            position:fixed
-                                            "><div class="loading-view">
-            <div class="container1">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-            <div class="container2">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-        </div><div class="tip-view">loading</div></div>
+    <!-- the loading animation before entering in web  -->
+    <div class="wrapper" style="opacity: 1; display: block">
+      <div class="loading-wrapper" style="z-index: 1002; position: fixed">
+        <div class="loading-view">
+          <div class="container1">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+          <div class="container2">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+        </div>
+        <div class="tip-view">loading</div>
+      </div>
     </div>
 
     <div id="contact">
+      <div>
+        <h2>If you have any question, please contact:</h2>
         <div>
-            <h2>If you have any question, please contact:</h2>
-        <div>
-        <div class="character">
+          <div class="character">
             <div><b>Prof. Tingjun Hou</b></div>
-            <br>
+            <br />
             <div>Email: tingjunhou@zju.edu.cn</div>
-            <br> 
+            <br />
             <div>Address: College of Pharmaceutical Sciences, Zhejiang University, Hangzhou, Zhejiang 310058, China</div>
-            <br>
-        </div>
-
-        <div class="character">
+            <br />
+          </div>
+    
+          <div class="character">
             <div><b>Lingjie Bao</b></div>
-            <br>
+            <br />
             <div>Email: 3160103569@zju.edu.cn</div>
-            <br>
+            <br />
             <div>Address: College of Pharmaceutical Sciences, Zhejiang University, Hangzhou, Zhejiang 310058, China</div>
-            <br>
+            <br />
+          </div>
         </div>
-        
+      </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Separator -->
+    <br />
+    <br />
+    <br />
+    <br />
 
-
-
-
-
-
-
+    <!-- the footer of website -->
     <div id="foot">
-        <footer>
-            <p>
-            © 2021 Tingjun Hou's Group. All Rights Reserved.
-            </p>
-        </footer>
+      <footer>
+        <p>© 2021 Tingjun Hou's Group. All Rights Reserved.</p>
+      </footer>
     </div>
-
 
     <script>
-        $(document).ready( function(){
-	    $(".wrapper").hide(500);
-            $("#hidden_item_btn").on("click",function(){
+        $(document).ready(function () {
+            // the funtion of loading animation before entering in web
+            $(".wrapper").hide(500);
+
+            // the funtion of toggler with the bar of menu
+            $("#hidden_item_btn").on("click", function () {
                 $(".hidden_item").toggle();
             });
-    })
+        });
     </script>
-</body>
+  </body>
 </html>

@@ -1,215 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Result</title>
-    <link rel="stylesheet" href="static/css/output02.css">
-    <link rel="stylesheet" href="static/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/loading.css">
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/loading.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/index.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="/static/css/output02.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/loading.css" />
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" language="javascript" type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/loading.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/index.js"></script>
+  </head>
 
-{#    #navbar#}
-    {# navbar #}
+  <body>
+    <!-- the bar of menu -->
     <div id="navlist">
-        <header>
-            <ul class="menulist">
-                <li class="head">
-                    <div id="name"><b>KIP</b>
-                        <div class="hidden_item" style="display:none">
-                             <a href="/kip"><i class="fa fa-home"></i> Home</a>
-                             <a href="submit"><i class="fa fa-upload"></i> Submit</a>
-                             <a href="help"><i class="fa fa-book"></i> Help</a>
-                             <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
-                        </div>
-                    </div>
-                </li>
-                <div class="item">
-                        <li><a href="/kip"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="submit"><i class="fa fa-upload"></i> Submit</a></li>
-                        <li><a href="help"><i class="fa fa-book"></i> Help</a></li>
-                        <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </div>
+      <header>
+        <ul class="menulist">
+          <li class="head">
+            <div id="name">
+              <b>KIP</b>
+              <div class="hidden_item" style="display: none">
+                <a href=""><i class="fa fa-home"></i> Home</a>
+                <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+                <a href="help"><i class="fa fa-book"></i> Help</a>
+                <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+              </div>
+            </div>
+          </li>
 
-                <div style="float:right">
-                    <li style="margin-top: 9px;"><button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button></li>
-                </div>
+          <!-- the bar of menu. Displaying when the screen size is small -->
+          <div class="item">
+            <li>
+              <a href=""><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+            </li>
+            <li>
+              <a href="help"><i class="fa fa-book"></i> Help</a>
+            </li>
+            <li>
+              <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+            </li>
+          </div>
 
-                
-            </ul>
-        </header>
+          <!-- toggler with the bar of menu when the screen size is small-->
+          <div style="float: right">
+            <li style="margin-top: 9px">
+              <button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button>
+            </li>
+          </div>
+        </ul>
+      </header>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="wrapper" style="opacity: 1;
-                                display:block;
-                                ">
-        <div class="loading-wrapper" style="z-index:1002;
-                                            position:fixed
-                                            "><div class="loading-view">
-            <div class="container1">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-            <div class="container2">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-        </div><div class="tip-view">loading</div></div>
-    </div>
+    <!-- Separator -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
-
-    <div id="overall_bar" style="text-align:left" class="subsection">Overall | </div>
-
-    
-    <br>
-
-    <table class="table table-bordered">
-        <tbody>
-            <tr>
-                <th >Number of valid molecules:</th>
-                <td>{{ item_result|length}}</td>
-
-            </tr>
-            <tr>
-                <th>Number of invalid molecules:</th>
-                <td>{{ invalid_smiles|length}}</td>
-
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-    <br>
-
-    <div id="download" class="subtitle subsection">
-        <div>Result | </div>
-        <div style="display:flex;
-		   flex-direction: row;
-    		   flex-wrap: nowrap;
-    		   align-content: center;
-    		   justify-content: center;
-    		   align-items: center;">
-            
-            <form action="download" method="post">
-                {%csrf_token%}{#csrf_token用来验证#}
-                <input type ="hidden" value={{index_result}} name="index">
-                <input type ="hidden" value="gobal_result" name="mode">
-                <span><button type="submit"  id="result_download"><i class="fa fa-download" aria-hidden="true"></i><span>result.csv</span></button></span>
-            </form>
-		&nbsp&nbsp
-             <form action="download" method="post" >
-                {%csrf_token%}{#csrf_token用来验证#}
-                <input type ="hidden" value={{length_invilid_fold}} name="index">
-                <input type ="hidden" value="invalid_smiles" name="mode">
-                <span><button  type="submit" id="invalid_smiles_download"></button></span>
-             </form>
-
+    <!-- the loading animation before entering in web -->
+    <div class="wrapper" style="opacity: 1; display: block">
+      <div class="loading-wrapper" style="z-index: 1002; position: fixed">
+        <div class="loading-view">
+          <div class="container1">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+          <div class="container2">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
         </div>
+        <div class="tip-view">loading</div>
+      </div>
     </div>
 
-    <br>
-
-
-
-
-    <div style="text-align:center;
-                    width: 100%;
-                    margin: 0 auto;">
-        <table id="show_table" class="table">
-              <thead>
-                    <tr>
-                        <th>Index</th>
-                        <th>Structure</th>
-                        <th>Detail</th>
-                    </tr>
-              </thead>
+    <!-- the summary  of submission of molecule -->
+    <div id="overall_bar" style="text-align: left" class="subsection">Overall |</div>
+    <br />
+    <table class="table table-bordered">
       <tbody>
-        {% for item_loop in item_result %}
-            <tr>
-                <td>{{ forloop.counter }}</td>
-{#                <td><img src="static/file/svg/mol/{{ forloop.counter }}.svg" alt="{{ forloop.counter }}.svg"/></td>#}
-                <td>
-                    <div>{{ item_loop.mol_graph|safe }}</div>
-                    <div>{{ item_loop.smiles }}</div>
-                </td>
-                <td><p class="smiles" style="display:none">{{ item_loop.smiles }}</p>
-                    <p class="result" style="display:none">{{ item_loop.result }}</p>
-                    <form calss="sub_form" target="_blank" action="molecule" method ="post">
-                        {%csrf_token%}{#csrf_token用来验证#}
-                        <input type ="hidden" name="index" value ={{ forloop.counter }}>
-                        <input type ="hidden" name="smiles" value ={{ item_loop.smiles }}>
-                        <input type ="hidden" name="result" value ="{{ item_loop.result }}">
-                        <button class="btn" type ="submit" value ="view">View</button>
-                    </form>
-                </td>
-            </tr>
-        {% endfor %}
+        <tr>
+          <th>Number of valid molecules:</th>
+          <td>{{ item_result|length}}</td>
+        </tr>
 
+        <tr>
+          <th>Number of invalid molecules:</th>
+          <td>{{ invalid_smiles|length}}</td>
+        </tr>
       </tbody>
     </table>
+
+    <!-- Seperator -->
+    <br />
+    <br />
+
+    <!-- downloading the result -->
+    <div id="download" class="subtitle subsection">
+      <div>Result |</div>
+      <div style="display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center">
+        <form action="download" method="post">
+          {%csrf_token%}{#csrf_token用来验证#}
+          <input type="hidden" value="{{index_result}}" name="index" />
+          <input type="hidden" value="gobal_result" name="mode" />
+          <span><button type="submit" id="result_download"><i class="fa fa-download" aria-hidden="true"></i><span>result.csv</span></button></span>
+        </form>
+        &nbsp&nbsp
+        <form action="download" method="post">
+          {%csrf_token%}{#csrf_token用来验证#}
+          <input type="hidden" value="{{length_invilid_fold}}" name="index" />
+          <input type="hidden" value="invalid_smiles" name="mode" />
+          <span><button type="submit" id="invalid_smiles_download"></button></span>
+        </form>
+      </div>
     </div>
 
+    <!-- Seperator -->
+    <br />
 
+    <!-- showing the  result in table -->
+    <div style="text-align: center; width: 100%; margin: 0 auto">
+      <table id="show_table" class="table">
+        <!-- columns name -->
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Structure</th>
+            <th>Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item_loop in item_result %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            {# <td><img src="/static/file/svg/mol/{{ forloop.counter }}.svg" alt="{{ forloop.counter }}.svg" /></td>#}
+            <td>
+              <div>{{ item_loop.mol_graph|safe }}</div>
+              <div>{{ item_loop.smiles }}</div>
+            </td>
+            <td>
+              <p class="smiles" style="display: none">{{ item_loop.smiles }}</p>
+              <p class="result" style="display: none">{{ item_loop.result }}</p>
+              <form calss="sub_form" target="_blank" action="molecule" method="post">
+                {%csrf_token%}{#csrf_token用来验证#}
+                <input type="hidden" name="index" value={{ forloop.counter }} />
+                <input type="hidden" name="smiles" value={{ item_loop.smiles }} />
+                <input type="hidden" name="result" value="{{ item_loop.result }}" />
+                <button class="btn" type="submit" value="view">View</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
 
+    <!-- Separator -->
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <!-- the footer of website -->
     <div id="foot">
-        <footer>
-            <p>
-            © 2021 Tingjun Hou's Group. All Rights Reserved.
-            </p>
-        </footer>
+      <footer>
+        <p>© 2021 Tingjun Hou's Group. All Rights Reserved.</p>
+      </footer>
     </div>
-
 
     <script>
       $(document).ready( function () {
+        // the funtion of showing table
         $('#show_table').DataTable();
-	$(".wrapper").hide(1000);
+
+        // the funtion of loading animation before entering in web
+        $(".wrapper").hide(1000);
+      });
+
+      $(document).ready( function(){
+        // the funtion of toggler with the bar of menu
+        $("#hidden_item_btn").on("click",function(){
+          $(".hidden_item").toggle();
+          });
         });
-
-        $(document).ready( function(){
-            $("#hidden_item_btn").on("click",function(){
-                $(".hidden_item").toggle();
-            });
-        });
-    
-
-     $(function(){
-         var i_smiles ={{ invalid_smiles|length }};
-         console.log(i_smiles);
-         if(i_smiles>0){
-             $("#invalid_smiles_download").append("<i class='fa fa-download' aria-hidden='true'></i><span>invalid.csv</span>");
-             $("#invalid_smiles_download").show();
-         }
-
-
-     });
-
-  
-
+        
+        // the funtion of showing the file containing invalid smiles
+        // and providing the route to download this file.
+        $(function(){
+          var i_smiles ={{ invalid_smiles|length }};
+          console.log(i_smiles);
+          if(i_smiles>0){
+              $("#invalid_smiles_download").append("<i class='fa fa-download' aria-hidden='true'></i><span>invalid.csv</span>");
+              $("#invalid_smiles_download").show();
+          }
+      });
     </script>
-
-</body>
+  </body>
 </html>

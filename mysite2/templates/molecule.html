@@ -1,563 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>molecule</title>
-    <link rel="stylesheet" href="static/css/detail02.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="static/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="stylesheet" href="static/css/loading.css">
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
-    <script type="text/javascript" language="javascript" src='static/js/plotly/plotly-2.4.2.min.js'></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/loading.js"></script>
-    <script type="text/javascript" language="javascript" src="static/js/index.js"></script>
+    <link rel="stylesheet" href="/static/css/detail02.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <link rel="stylesheet" href="/static/css/loading.css" />
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-3.4.1.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jQuery-3.4.1/jquery-cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/plotly/plotly-2.4.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/loading.js"></script>
+    <script type="text/javascript" language="javascript" src="/static/js/index.js"></script>
+  </head>
 
-</head>
-<body>
-
+  <body>
+    <!-- the bar of menu -->
     {# navbar #}
     <div id="navlist">
-        <header>
-            <ul class="menulist">
-                <li class="head">
-                    <div id="name"><b>KIP</b>
-                        <div class="hidden_item" style="display:none">
-                             <a href="/kip"><i class="fa fa-home"></i> Home</a>
-                             <a href="submit"><i class="fa fa-upload"></i> Submit</a>
-                             <a href="help"><i class="fa fa-book"></i> Help</a>
-                             <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
-                        </div>
-                    </div>
-                </li>
-                <div class="item">
-                        <li><a href="/kip"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a href="submit"><i class="fa fa-upload"></i> Submit</a></li>
-                        <li><a href="help"><i class="fa fa-book"></i> Help</a></li>
-                        <li><a href="contact"><i class="fa fa-envelope"></i> Contact</a></li>
-                </div>
+      <header>
+        <ul class="menulist">
+          <li class="head">
+            <div id="name">
+              <b>KIP</b>
+              <div class="hidden_item" style="display: none">
+                <a href=""><i class="fa fa-home"></i> Home</a>
+                <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+                <a href="help"><i class="fa fa-book"></i> Help</a>
+                <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+              </div>
+            </div>
+          </li>
 
-                <div style="float:right">
-                    <li style="margin-top: 9px;"><button id="hidden_item_btn" class="icon"><i class="fa fa-bars"></i></button></li>
-                </div>
-
-                
-            </ul>
-        </header>
+          <!-- the bar of menu. Displaying when the screen size is small -->
+          <div class="item">
+            <li>
+              <a href=""><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="submit"><i class="fa fa-upload"></i> Submit</a>
+            </li>
+            <li>
+              <a href="help"><i class="fa fa-book"></i> Help</a>
+            </li>
+            <li>
+              <a href="contact"><i class="fa fa-envelope"></i> Contact</a>
+            </li>
+          </div>
+          
+          <!-- toggler with the bar of menu when the screen size is small-->
+          <div style="float: right">
+            <li style="margin-top: 9px">
+              <button id="hidden_item_btn" class="icon">
+                <i class="fa fa-bars"></i>
+              </button>
+            </li>
+          </div>
+        </ul>
+      </header>
     </div>
 
+    <!-- Separator -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="wrapper" style="opacity: 1;
-                                display:block;
-                                ">
-        <div class="loading-wrapper" style="z-index:1002;
-                                            position:fixed
-                                            "><div class="loading-view">
-            <div class="container1">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-            <div class="container2">
-                <div class="circle circle1"></div>
-                <div class="circle circle2"></div>
-                <div class="circle circle3"></div>
-                <div class="circle circle4"></div>
-            </div>
-        </div><div class="tip-view">loading</div></div>
+    <!-- the loading animation before entering in web -->
+    <div class="wrapper" style="opacity: 1; display: block">
+      <div class="loading-wrapper" style="z-index: 1002; position: fixed">
+        <div class="loading-view">
+          <div class="container1">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+          <div class="container2">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+        </div>
+        <div class="tip-view">loading</div>
+      </div>
     </div>
-    
-    <div id="smiles" class="subtitle"><div>SMILES | </div> <div>{{ smiles }}</div></div>
-    <br>
-    
 
+    <!-- summary of molecule -->
+    <div id="smiles" class="subtitle">
+      <div>SMILES |</div>
+      <div>{{ smiles }}</div>
+    </div>
+    <br />
+
+    <!-- The summary of result shown as table -->
     <div class="graph">
-        <div id="mol_hist">
-            <div id="mol">
-                <table class="over_expression">
-                    <thead>
-                        <tr>
-                            <td><div style="padding: 0.25em;">2D Structure</div></td>
-                        </tr>
-                        
-                    </thead>
+      <!-- 2D molecule + hist -->
+      <div id="mol_hist">
 
-                    <tbody>
-                        <tr>
-                            <td><div>{{mol_graph|safe}}</div></td>
-                        </tr>
-                    </tbody>                
-                </table>
-            </div>
+        <!-- 2D molecule -->
+        <div id="mol">
+          <table class="over_expression">
+            <thead>
+              <tr>
+                <!-- sub-subtitle -->
+                <td><div style="padding: 0.25em">2D Structure</div></td>
+              </tr>
+            </thead>
 
-            
-
-            <div id='barplot1'>
-                <table class="over_expression">
-                    <thead>
-                        <tr>
-                            <td><div style="padding: 0.25em;">Bioactivity against Group</div></td>
-                        </tr>
-                        
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td><div id="group_div" style="width:100%;height:auto;max-width:375px;max-height:330px"></div></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <tbody>
+              <tr>
+                <!-- molecule -->
+                <td><div>{{mol_graph|safe}}</div></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <br>
+        <!-- hist -->
+        <div id="barplot1">
+          <table class="over_expression">
+            <thead>
+              <tr>
+                <td>
+                  <!-- sub-subtitle -->
+                  <div style="padding: 0.25em">Bioactivity against Group</div>
+                </td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <!-- hist for group-->
+                  <div id="group_div" style="width: 100%; height: auto; max-width: 375px; max-height: 330px"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- sunburst -->
+      <div id="sunburst">
+        <table class="over_expression">
+          <thead>
+            <tr>
+              <td>
+                <!-- sub-subtitle -->
+                <div style="padding: 0.25em">Bioactivity against Kinase</div>
+              </td>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <!-- sunburst -->
+                <div id="uniprot_div" style="width: 100%; height: auto; max-width: 800px">{{uniprot_div|safe}}</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- explanation -->
+    <div id="explain_item" style="display: none; max-width: 1080px">
+      <!-- result table -->
+      <table id="explain_item_table">
+        <thead>
+          <tr>
+            <td colspan="6" class="e_table_tile e_table_head">
+              <div>Detail</div>
+            </td>
+
+            <td>
+              <div style="text-align: center">
+                <button id="cancel">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td></td>
+
+            <td class="e_table_tile" colspan="2">
+              <div>UniProt</div>
+            </td>
+
+            <td colspan="3">
+              <div id="explain_uniprot"></div>
+            </td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+
+            <td class="e_table_tile" colspan="2">
+              <div class="uniprot_name">Name(Symbol)</div>
+              <div class="symbol_name">Symbol</div>
+            </td>
+
+            <td colspan="3">
+              <div id="explain_name" class="uniprot_name"></div>
+              <div id="explain_symbol" class="symbol_name"></div>
+            </td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+
+            <td class="e_table_tile" colspan="2">
+              <div>Group</div>
+            </td>
+
+            <td colspan="3">
+              <div id="explain_group"></div>
+            </td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+
+            <td class="e_table_tile" colspan="2">
+              <div>Family</div>
+            </td>
+
+            <td colspan="3">
+              <div id="explain_family"></div>
+            </td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+
+            <td class="e_table_tile" colspan="2">
+              <div>Prediction</div>
+            </td>
+
+            <td colspan="3">
+              <div id="explain_prediction"></div>
+            </td>
+
+            <td></td>
+          </tr>
+
+          <tr>
+            <td rowspan="3" colspan="7">
+              <div id="explain_graph">
+                <div id="color_graph"></div>
+                <div id="colorbar">
+                  <img src="/static/file/svg/explain/colorbar_0209.svg" alt="colorbar.svg" />
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <br />
+    <!-- the explanation for single prediction -->
+    <div id="single_result" class="subtitle">
+      <div>Result |</div>
+      <div>
+        <form action="download" method="post">
+          {%csrf_token%}{#csrf_token用来验证#}
+          <input type="hidden" value="{{single_length}}" name="index" />
+          <input type="hidden" value="single_mol" name="mode" />
+          <input type="hidden" value="{{index}}" name="file_index" />
+          <span>
+            <button type="submit" id="result_download"><i class="fa fa-download" aria-hidden="true"></i><span>result_{{index}}.csv</span></button>
+          </span>
+        </form>
+      </div>
+    </div>
+    <br/>
+
+    <div style="text-align: center">
+      <div class="care">
+        <b>
+          Attention!!! Only the results predicted to be
+          <b class="token">positive</b> are explained. It is not recommended to interpret the results with low prediction probability. Otherwise, it may gain strange explanation results.
+        </b>
+      </div>
+      <br />
+      <table id="show_table" class="table">
+        <thead>
+          <tr>
+            <th style="width: 5%">Index</th>
+            <th style="width: 10%">UniProt</th>
+            <th style="width: 15%">
+              <div class="uniprot_name">Name(Symbol)</div>
+              <div class="symbol_name">Symbol</div>
+            </th>
+            <th style="width: 10%">Group</th>
+            <th style="width: 10%">Family</th>
+            <th style="width: 10%">Prediction</th>
+            <th style="width: 10%">Explanation</th>
+          </tr>
+        </thead>
         
-        <div id='sunburst'>
-            <table class="over_expression">
-                <thead>
-                    <tr>
-                        <td><div style="padding: 0.25em;">Bioactivity against Kinase</div></td>
-                    </tr>     
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td><div id="uniprot_div" style="width:100%;height:auto;max-width:800px">{{uniprot_div|safe}}</div></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <!-- the result of explantion of single prediction shown as table -->
+        <tbody>
+          {% for item_loop in result %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ item_loop.uniprot}}</td>
+            <td>
+              <div class="uniprot_name">{{ item_loop.name}}({{ item_loop.symbol}})</div>
+              <div class="symbol_name">{{ item_loop.symbol}}</div>
+            </td>
+            <td>{{ item_loop.group}}</td>
+            <td>{{ item_loop.family}}</td>
+            <td>{{ item_loop.prediction}}</td>
+            <td>
+              <button type="button" id="protein_{{ forloop.counter }}" class="btn_head" value="{{ item_loop.uniprot}}">Expalin</button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
 
-    <br>
-    
-    <div id="explain_item" style="display:none;
-	    			max-width:1080px;">
-        <table id="explain_item_table">
+    <br />
 
-            <thead>
-                <tr>
-                    <td colspan="6" class="e_table_tile e_table_head">
-                            <div>Detail</div> 
-                    </td>
-
-                    
-
-                    <td>
-                        <div style="text-align: center;"><button id="cancel"><i class="fa fa-times" aria-hidden="true"></i></button></div>
-                    </td>
-
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>
-                    </td>
-                    
-
-                    <td class="e_table_tile" colspan="2">
-                        <div>UniProt</div>
-                    </td>
-
-
-                    <td colspan="3">
-                        <div id="explain_uniprot"></div>
-                    </td>
-                    
-                    <td>
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <td>
-                    </td>
-                    
-                    
-                    <td class="e_table_tile" colspan="2">
-                        <div class="uniprot_name">Name(Symbol)</div>
-                        <div class="symbol_name">Symbol</div>
-                    </td>
-
-                    <td colspan="3">
-                        <div id="explain_name" class="uniprot_name"></div>
-                        <div id="explain_symbol" class="symbol_name"></div>
-                    </td>
-
-                    <td>
-                    </td>
-
-                </tr>
-
-                <tr>
-                    <td>
-                    </td>
-                    
-
-                    <td class="e_table_tile" colspan="2">
-                        <div>Group</div>
-                    </td>
-                    <td colspan="3">
-                        <div id="explain_group"></div>
-                    </td>
-
-                    <td>
-                    </td>
-
-
-                </tr>
-
-                <tr>
-
-                    <td>
-                    </td>
-
-                    <td class="e_table_tile" colspan="2">
-                        <div>Family</div>
-                    </td>
-                    <td colspan="3">
-                        <div id="explain_family"></div>
-                    </td>
-                    <td>
-                    </td>
-
-
-                </tr>
-
-                <tr>
-
-                    <td>
-                    </td>
-
-                    <td class="e_table_tile" colspan="2">
-                        <div>Prediction</div>
-                    </td>
-                    <td colspan="3">
-                        <div id="explain_prediction"></div>
-                    </td>
-                    <td>
-                    </td>
-
-
-                </tr>
-
-
-                
-
-                <tr>
-                
-                    <td rowspan="3" colspan="7">
-                        <div id="explain_graph">
-                            
-                            <div id="color_graph"></div>
-                            <div id="colorbar"><img src="static/file/svg/explain/colorbar_0209.svg" alt="colorbar.svg"/></div>
-                        </div>
-                    </td>
-
-                </tr>
-
-                
-            </tbody>
-        </table>
-    </div>
-
-    <br>
-    <div id="single_result" class="subtitle"><div>Result | </div>
-        <div>
-            <form action="download" method="post" >
-                {%csrf_token%}{#csrf_token用来验证#}
-                <input type ="hidden" value={{single_length}} name="index">
-                <input type ="hidden" value="single_mol" name="mode">
-                <input type ="hidden" value={{index}} name="file_index">
-                <span>
-                    <button  type="submit" id="result_download">
-                        <i class="fa fa-download" aria-hidden="true"></i><span>result_{{index}}.csv</span>
-                    </button>
-                </span>
-             </form>
-
-            
-        </div>
-    </div>
-    <br>
-    
-    
-    
-    <div style="text-align:center">
-	<div class="care">
-            <b>
-            Attention!!! Only the results predicted to be <b class="token">positive</b> are explained.
-                It is not recommended to interpret the results with low prediction probability. Otherwise, it may gain strange explanation results.
-            </b>
-        </div>
-	<br>
-        <table id="show_table" class="table">
-            <thead>
-                <tr>
-                    <th style="width:5%">Index</th>
-                    <th style="width:10%">UniProt</th>
-                    <th style="width:15%"><div class="uniprot_name">Name(Symbol)</div><div class="symbol_name">Symbol</div></th>
-                    <th style="width:10%">Group</th>
-                    <th style="width:10%">Family</th>
-                    <th style="width:10%">Prediction</th>
-                    <th style="width:10%">Explanation</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                {% for item_loop in result %}
-                    <tr>
-                        <td>{{ forloop.counter }}</td>
-                        <td>{{ item_loop.uniprot}}</td>
-                        <td><div class="uniprot_name">{{ item_loop.name}}({{ item_loop.symbol}})</div><div class="symbol_name">{{ item_loop.symbol}}</div></td>
-                        <td>{{ item_loop.group}}</td>
-                        <td>{{ item_loop.family}}</td>
-                        <td>{{ item_loop.prediction}}</td>
-                        <td>
-                            <button type="button" id="protein_{{ forloop.counter }}"  class="btn_head"  value ="{{ item_loop.uniprot}}">Expalin</button>
-                        </td> 
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-
-    <br>
-
-
+    <!-- the explanation for multiple prediction -->
     <div>
-        <div id="group_explain" class="subtitle">
-            <div>Explain for Group | </div>
-            <div>
-                <form style="text-align:center;" action="molecule" onsubmit="return false" method="post">
-                    
-                    {%csrf_token%}{#csrf_token用来验证#}
-                    <input type ="hidden" value={{ smiles }} id="smiles_input" name="smiles_input">
-                    <input type ="hidden" value={{ predict_result_str}} id="predict_result_str" name="predict_result_str">
-                        <label>Threshold:</label> 
-                            <select id="mode_select" class="group_ex_btn" name="mode" style="text-align: center;">
-                                <option value="0.4">0.4</option>
-                                <option value="0.5">0.5</option>
-                                <option value="0.6">0.6</option>
-                                <option value="0.7" selected="selected">0.7</option>
-                                <option value="0.8" >0.8</option>
-                                <option value="0.9" >0.9</option>
-                            </select>
-                        
-                    <label>Group:</label> 
-                        <select id="group_select" class="group_ex_btn" name="group" style="text-align: center;">
-                            {% comment %} <option value="All">ALL</option> {% endcomment %}
-                            <option value="AGC">AGC</option>
-                            <option value="Atypical">Atypical</option>
-                            <option value="CK1">CK1</option>
-                            <option value="CAMK">CAMK</option>
-                            <option value="CMGC">CMGC</option>
-                            <option value="Other">Other</option>
-                            <option value="STE">STE</option>
-                            <option value="TK" selected="selected">TK</option>
-                            <option value="TKL">TKL</option>
-                            <option value="All">All</option>
-                        </select>
-                    <input type="button" value="submit" onclick="group_function()">
-                </form>
-            </div>
+      <div id="group_explain" class="subtitle">
+        <!-- subtitle -->
+        <div>Explain for Group |</div>
+        <div>
+          <form style="text-align: center" action="molecule" onsubmit="return false" method="post">
+            {%csrf_token%}{#csrf_token用来验证#}
+            <!-- selection for threshold -->
+            <input type="hidden" value={{ smiles }} id="smiles_input" name="smiles_input" />
+            <input type="hidden" value={{ predict_result_str}} id="predict_result_str" name="predict_result_str" />
+            <label>Threshold:</label>
+            <select id="mode_select" class="group_ex_btn" name="mode" style="text-align: center">
+              <option value="0.4">0.4</option>
+              <option value="0.5">0.5</option>
+              <option value="0.6">0.6</option>
+              <option value="0.7" selected="selected">0.7</option>
+              <option value="0.8">0.8</option>
+              <option value="0.9">0.9</option>
+            </select>
+            
+            <!-- selection for group -->
+            <label>Group:</label>
+            <select id="group_select" class="group_ex_btn" name="group" style="text-align: center">
+              {% comment %}
+              <option value="All">ALL</option>
+              {% endcomment %}
+              <option value="AGC">AGC</option>
+              <option value="Atypical">Atypical</option>
+              <option value="CK1">CK1</option>
+              <option value="CAMK">CAMK</option>
+              <option value="CMGC">CMGC</option>
+              <option value="Other">Other</option>
+              <option value="STE">STE</option>
+              <option value="TK" selected="selected">TK</option>
+              <option value="TKL">TKL</option>
+              <option value="All">All</option>
+            </select>
+            <input type="button" value="submit" onclick="group_function()" />
+          </form>
         </div>
+      </div>
 
-        <br>
+      <!-- Separator -->
+      <br />
+      <hr />
+      <br />
 
-        
-        
-        
-        <hr>
-        <br>
-        
-
-        
-        <div id="show_data" style="display:none">
-            <table id="explain_data" class="table">
-              <thead>
-                    <tr>
-                        <th style="width:5%">Index</th>
-                        <th style="width:10%">UniProt</th>
-                        <th style="width:15%"><div class="uniprot_name">Name(Symbol)</div><div class="symbol_name">Symbol</div></th>
-                        <th style="width:10%">Group</th>
-                        <th style="width:10%">Family</th>
-                        <th style="width:40%">Explanation</th>
-                        <th style="width:10%">Prediction</th>
-                    </tr>
-              </thead>
-              <tbody id="tb">
-              </tbody>
-            </table>
-        </div>
+      <!-- the result of explantion of single prediction shown as table -->
+      <div id="show_data" style="display: none">
+        <table id="explain_data" class="table">
+          <thead>
+            <tr>
+              <th style="width: 5%">Index</th>
+              <th style="width: 10%">UniProt</th>
+              <th style="width: 15%">
+                <div class="uniprot_name">Name(Symbol)</div>
+                <div class="symbol_name">Symbol</div>
+              </th>
+              <th style="width: 10%">Group</th>
+              <th style="width: 10%">Family</th>
+              <th style="width: 40%">Explanation</th>
+              <th style="width: 10%">Prediction</th>
+            </tr>
+          </thead>
+          <tbody id="tb"></tbody>
+        </table>
+      </div>
     </div>
-    
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
+    <!-- Separator -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- the footer of website -->
     <div id="foot">
-        <footer>
-            <p>
-            © 2021 Tingjun Hou's Group. All Rights Reserved.
-            </p>
-        </footer>
+      <footer>
+        <p>© 2021 Tingjun Hou's Group. All Rights Reserved.</p>
+      </footer>
     </div>
 
-
-
-<script>
-    $(document).ready( function () {
-
+    <script>
+      $(document).ready( function(){
+        // the funtion of hiding table
         $('#show_table').DataTable({"autoWidth": false});
-	$(".wrapper").hide();
+
+        // the funtion of loading animation before entering in web
+        $(".wrapper").hide();
+
+        // the funtion of showing table
         $('#explain_data').DataTable({"autoWidth": false});
+
+        // the funtion of toggler with the bar of menu
         $("#hidden_item_btn").on("click",function(){
-                $(".hidden_item").toggle();
-            });
+        $(".hidden_item").toggle();
+      });
+
+      $("#cancel").on("click",function(){
+        // the funtion of toggler the explantion of single prediction
+        $("#explain_item").hide();
+      });
+
+      // the funtion of showing the prediction result.
+      $("#show_table").on('click',"[id^=protein_]", function(){
+        $(".wrapper").show();
+
+        var smiles = document.getElementById("smiles_input").value;
+        var uniprot = $(this).val();
+        console.log(uniprot);
+
+        $.ajax({
+          url:"molecule",
+          type:"post",
+          contentType: "application/json",
+          async:false,
+          cache:false,
+          data:JSON.stringify({"smiles":smiles,
+                              "uniprot":uniprot,}),
+          headers:{'X-CSRFToken': $('input[name=csrfmiddlewaretoken]').val()},
+          success :function(data){
+            var data = JSON.parse(data);
+            $("#explain_smiles").text(document.getElementById("smiles_input").value);
+            $("#explain_prediction").text(data[0].prediction);
+            
+            // alert for the result that is not positive enough
+            if (data[0].prediction<0.5){
+              alert("The prediction is not positive enough");
+            }
+            
+            // adding the single prediction result to table
+            $("#explain_uniprot").text(data[0].uniprot);
+            $("#explain_group").text(data[0].group);
+            $("#explain_family").text(data[0].family);
+            $("#explain_name").text(data[0].name+"("+data[0].symbol+")");
+            $("#explain_symbol").text(data[0].symbol);
+            $("#color_graph").html(data[0].explain);
+          }
+        });
         
+        var pop = document.getElementById("explain_item");
+        
+        // the funtion of terminating animation
+        $(".wrapper").hide(300);
 
-        $("#cancel").on("click",function(){
-            $("#explain_item").hide();
+        // showing the single prediction result to table
+        pop.style.display = "block"; 
+        });
+      });
+
+      function group_function(){
+        // geting selection 
+        var group=document.getElementById("group_select").value;
+        var smiles=document.getElementById("smiles_input").value;
+        var mode_select = document.getElementById("mode_select").value;
+        var predict_result_str = document.getElementById("predict_result_str").value;
+        if(group=="All"){
+            alert("It will consume a long time!")
+        };
+
+        // the funtion of loading animation
+        $(".wrapper").show();
+
+        // json object
+        pass_data=JSON.stringify({
+            "smiles":smiles,
+            "group":group,
+            "mode_select":mode_select,
+            "predict_result_str":predict_result_str,
         });
 
-        $("#show_table").on('click',"[id^=protein_]", function(){
-            $(".wrapper").show();
-            var smiles = document.getElementById("smiles_input").value;
-            var uniprot = $(this).val();
-            console.log(uniprot);
-
-            $.ajax({
-                url:"molecule",
-                type:"post",
-                contentType: "application/json",
-                async:false,
-                cache:false,
-                data:JSON.stringify({"smiles":smiles,
-                                    "uniprot":uniprot,}),
-                headers:{'X-CSRFToken': $('input[name=csrfmiddlewaretoken]').val()},
-                
-                success :function(data){
-                    var data = JSON.parse(data);
-                    $("#explain_smiles").text(document.getElementById("smiles_input").value);
-                    $("#explain_prediction").text(data[0].prediction);
-		    if (data[0].prediction<0.5){
-                        alert("The prediction is not positive enough");
-                    }
-                    $("#explain_uniprot").text(data[0].uniprot);
-                    $("#explain_group").text(data[0].group);
-                    $("#explain_family").text(data[0].family);
-                    $("#explain_name").text(data[0].name+"("+data[0].symbol+")");
-                    $("#explain_symbol").text(data[0].symbol);
-                    $("#color_graph").html(data[0].explain);
-                    }
-            });
-            var pop = document.getElementById("explain_item");
-		$(".wrapper").hide(300);
-		pop.style.display = "block"; //显示隐藏层
-		    
+        console.log(pass_data);
+        $.ajax({
+            url:"molecule",
+            type:"post",
+            contentType: "application/json",
+            async:false,
+            cache:false,
+            data:pass_data,
+            headers:{'X-CSRFToken': $('input[name=csrfmiddlewaretoken]').val()},
+            success :function(data){
+              var data=JSON.parse(data);
+              if(data.length==0){
+                alert("There is no instance for explanation");
+              }
+              else{
+                // adding the result to table
+                $('#explain_data').dataTable().fnClearTable();
+                var t = $('#explain_data').DataTable();
+                console.log(data.length);
+                var arr = new Array();
+                for(var i=0;i<data.length;i++){          //一维
+                    arr[i]=new Array(i);    //再声明二维
+                    arr[i][0]=(i+1);
+                    arr[i][1]=data[i].uniprot;
+                    arr[i][2]="<div class='uniprot_name'>"+data[i].name+"("+data[i].symbol+")"+"</div>"+"<div class='symbol_name'>"+data[i].symbol+"</div>";
+                    arr[i][3]=data[i].group;
+                    arr[i][4]=data[i].family;
+                    arr[i][5]=data[i].explain;
+                    arr[i][6]=data[i].prediction;
+                    };
+                console.log(arr);
+                t.rows.add(arr).draw();
+                // showing the single prediction result to table
+                $("#show_data").show();
+              }
+            }
         });
-    });
-
-    function group_function(){
-            var group=document.getElementById("group_select").value;
-            var smiles=document.getElementById("smiles_input").value;
-            var mode_select = document.getElementById("mode_select").value;
-            var predict_result_str = document.getElementById("predict_result_str").value;  
-            if(group=="All"){
-                alert("It will consume a long time!")
-            };
-
-            $(".wrapper").show();
-
-            pass_data=JSON.stringify({
-                "smiles":smiles,
-                "group":group,
-                "mode_select":mode_select,
-                "predict_result_str":predict_result_str,
-            });
-
-            console.log(pass_data);
-            $.ajax({
-                url:"molecule",
-                type:"post",
-                contentType: "application/json",
-                async:false,
-                cache:false,
-                data:pass_data,
-                headers:{'X-CSRFToken': $('input[name=csrfmiddlewaretoken]').val()}, 
-                success :function(data){
-                    var data=JSON.parse(data);
-                    if(data.length==0){
-                    alert("There is no instance for explanation");
-                    }else{
-                    $('#explain_data').dataTable().fnClearTable();
-                    var t = $('#explain_data').DataTable(); 
-                    console.log(data.length);
-                    var arr = new Array();
-                    for(var i=0;i<data.length;i++){          //一维
-                        arr[i]=new Array(i);    //在声明二维 
-                        arr[i][0]=(i+1);
-                        arr[i][1]=data[i].uniprot;
-                        arr[i][2]="<div class='uniprot_name'>"+data[i].name+"("+data[i].symbol+")"+"</div>"+"<div class='symbol_name'>"+data[i].symbol+"</div>";
-                        arr[i][3]=data[i].group;
-                        arr[i][4]=data[i].family;
-                        arr[i][5]=data[i].explain; 
-                        arr[i][6]=data[i].prediction;
-                        };
-                    console.log(arr);
-                    t.rows.add(arr).draw();
-                    $("#show_data").show();
-                   
-                    }                
-                
-                }
-
-
-
-
-            });
-	    $(".wrapper").hide(300);
-
-    };
-    $(function(){
+        // the funtion of terminating animation
+        $(".wrapper").hide(300);
+      };
+      
+      // plotting hist
+      $(function(){
         var xArray={{group_array|safe}};
         var yArray={{group_count}};
-
         var data = [{
-            x:xArray,
-            y:yArray,
-            type:"bar"
-            }];
-        
-    var layout = {
-        width: 360,
-        height: 330,
-    };
-    Plotly.newPlot("group_div", data,layout);
-    });
+          x: xArray,
+          y: yArray,
+          type: "bar"
+          }];
 
-    
+        var layout = {
+          width: 360,
+          height: 330,
+        };
+
+        Plotly.newPlot("group_div", data, layout);
+      });
     </script>
-
-
-</body>
-
+  </body>
 </html>
