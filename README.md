@@ -6,7 +6,7 @@
 
 <img src="mysite2/static/img/GNN.png">
 
-​        This web server can provide service of downloading datasets，prediction the inhibitor activity againset 204 protein kinases(<a href="mysite2/static/file/UniProt.csv"><img src="mysite2\static\img\csv.png" width=3.0%></a>) , explantion.
+​        This web server can provide service of downloading datasets，prediction the inhibitor activity againset 204 protein kinases(<a href="mysite2/static/file/UniProt.csv"><img src="mysite2\static\img\csv.png" width=1.5%></a>) , explantion.
 
 <img src="mysite2/static/img/function.bmp">
 
