@@ -49,67 +49,46 @@ init_seeds(seed=6)
 
 
 class Classifer(nn.Module):
-    def __init__(self, in_feats, graph_hidden, depth, mlp_layers, n_classes, dropout):
+    def __init__(self, 
+        in_feats, 
+        graph_hidden, 
+        depth, 
+        mlp_layers, 
+        n_classes, 
+        dropout):
+
+        """ 
+        initialization parameters for model
+
+        Args:
+            in_feats (int): the input dimention of the freature of molecule graph
+            graph_hidden (int): the hidden dimention of the freature transformed by GNN model
+            depth (int): the number of iteration of GNN model
+            mlp_layers (list): the list containing hidden layer of MLP
+            n_classes (int): the output dimention that solve diifferent tasks
+            dropout (float): the ratio of dropout in MLP layers and GNN layers  
+        """
+
         super(Classifer, self).__init__()
         self.len_mlp_layers = len(mlp_layers)
 
-        # GCN
-        self.gcn1 = GINConv(
-            apply_func=nn.Linear(in_feats, graph_hidden), aggregator_type="sum"
-        )
-        self.gcn1_bn = torch.nn.BatchNorm1d(
-            graph_hidden, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True
-        )
-        self.gcn2 = nn.ModuleList(
-            [
-                GINConv(
-                    apply_func=nn.Linear(graph_hidden, graph_hidden),
-                    aggregator_type="sum",
-                )
-                for _ in range(depth - 1)
-            ]
-        )
-        self.gcn2_bns = nn.ModuleList(
-            [
-                torch.nn.BatchNorm1d(
-                    graph_hidden,
-                    eps=1e-05,
-                    momentum=0.1,
-                    affine=True,
-                    track_running_stats=True,
-                )
-                for _ in range(depth - 1)
-            ]
-        )
+        # GNN
+        self.gcn1 = GINConv(apply_func=nn.Linear(in_feats, graph_hidden), aggregator_type="sum")
+        self.gcn1_bn = torch.nn.BatchNorm1d(graph_hidden, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        self.gcn2 = nn.ModuleList([GINConv(apply_func=nn.Linear(graph_hidden, graph_hidden), aggregator_type="sum",)
+                                                                                            for _ in range(depth - 1)])
+
+        self.gcn2_bns = nn.ModuleList([torch.nn.BatchNorm1d(graph_hidden, eps = 1e-05, momentum = 0.1, affine = True, track_running_stats = True,) 
+                                                                                            for _ in range(depth - 1)])
 
         # predict
         if len(mlp_layers) != 0:
             self.fc1 = nn.Linear(graph_hidden, mlp_layers[0])
-            self.bn1 = torch.nn.BatchNorm1d(
-                mlp_layers[0],
-                eps=1e-05,
-                momentum=0.1,
-                affine=True,
-                track_running_stats=True,
-            )
-            self.linears = nn.ModuleList(
-                [
-                    nn.Linear(mlp_layers[i], mlp_layers[i + 1])
-                    for i in range(len(mlp_layers) - 1)
-                ]
-            )
-            self.bns = nn.ModuleList(
-                [
-                    torch.nn.BatchNorm1d(
-                        mlp_layers[i + 1],
-                        eps=1e-05,
-                        momentum=0.1,
-                        affine=True,
-                        track_running_stats=True,
-                    )
-                    for i in range(len(mlp_layers) - 1)
-                ]
-            )
+            self.bn1 = torch.nn.BatchNorm1d(mlp_layers[0], eps = 1e-05, momentum = 0.1, affine = True, track_running_stats = True,)
+            self.linears = nn.ModuleList([nn.Linear(mlp_layers[i], mlp_layers[i + 1]) 
+                                                                                    for i in range(len(mlp_layers) - 1)])
+            self.bns = nn.ModuleList([torch.nn.BatchNorm1d( mlp_layers[i + 1], eps = 1e-05, momentum = 0.1, affine = True, track_running_stats = True,)
+                                                                                    for i in range(len(mlp_layers) - 1)])
 
             self.fc2 = nn.Linear(mlp_layers[-1], n_classes * 2)
         else:
@@ -133,12 +112,8 @@ class Classifer(nn.Module):
 
         # readout
         g.ndata["h"] = h
-        g.apply_edges(
-            lambda edges: {
-                "embedding": torch.cat([edges.src["h"], edges.dst["h"]], dim=1)
-            }
-        )
-        self.embedding = g.edata["embedding"]
+        # g.apply_edges(lambda edges: { "embedding": torch.cat([edges.src["h"], edges.dst["h"]], dim=1)})
+        # self.embedding = g.edata["embedding"]
 
         x = dgl.readout_nodes(g, "h", op="sum")
 
@@ -202,17 +177,13 @@ n_classes = 204
 device = torch.device("cpu")  # "cuda:0" if torch.cuda.is_available() else "cpu"
 
 
-
 net = Classifer(
     in_feats=in_feats,
     graph_hidden=GNN_graph_hidden,
     depth=GNN_depth,
     mlp_layers=GNN_mlp_layers,
     n_classes=n_classes,
-    dropout=GNN_dropout,
-).to(
-    device
-)  ### 实例化模型
+    dropout=GNN_dropout,).to(device)  ### 实例化模型
 
 model_file = torch.load(model_path, map_location=device)
 net.load_state_dict(model_file["model_state_dict"])
@@ -225,24 +196,11 @@ target_array = np.arange(uniprot_array.shape[0])
 def model_output(df):
     length_fold = None
     PandasTools.AddMoleculeColumnToFrame(df, smilesCol="smiles")
-    invalid_smiles = [
-        df.loc[i, "smiles"] for i in df.index if df.loc[i, "ROMol"] is None
-    ]
+    invalid_smiles = [df.loc[i, "smiles"] for i in df.index if df.loc[i, "ROMol"] is None]
     df_invalid = pd.DataFrame(data=invalid_smiles, columns=["smiles"])
     if len(df_invalid) > 0:
-        length_fold = len(
-            os.listdir(
-                os.path.join(Base_dir, r"static/file/download_file/invalid_smiles")
-            )
-        )
-        df_invalid.to_csv(
-            os.path.join(
-                Base_dir,
-                r"static/file/download_file/invalid_smiles/invalid_smiles_%d.csv"
-                % (length_fold),
-            ),
-            index=False,
-        )
+        length_fold = len(os.listdir(os.path.join(Base_dir, r"static/file/download_file/invalid_smiles")))
+        df_invalid.to_csv(os.path.join(Base_dir, r"static/file/download_file/invalid_smiles/invalid_smiles_%d.csv"% (length_fold), ), index=False, )
 
     df = df[~df.ROMol.isnull()]
     PandasTools.RemoveSaltsFromFrame(df)
@@ -253,9 +211,9 @@ def model_output(df):
     train_g = [
         smiles_to_bigraph(
             smiles,
-            node_featurizer=atom_featurizer,
-            edge_featurizer=bond_featurizer,
-            add_self_loop=False,
+            node_featurizer = atom_featurizer,
+            edge_featurizer = bond_featurizer,
+            add_self_loop = False,
         )
         for smiles in df.canonical_smiles
     ]
@@ -271,41 +229,15 @@ def model_output(df):
     outputs_numpy = torch.cat(outputs_list, dim=0).data.cpu().numpy()
     outputs_numpy = np.around(outputs_numpy, 4)
     outputs_numpy = np.clip(outputs_numpy, 0.0001, 0.9999)
-    result = pd.DataFrame(
-        data=outputs_numpy,
-        columns=[i for i in df_uniprot.UniProt],
-        index=df.canonical_smiles,
-    )
+    result = pd.DataFrame(data = outputs_numpy, columns = [i for i in df_uniprot.UniProt], index = df.canonical_smiles,)
 
-    result_length = len(
-        os.listdir(
-            os.path.join(
-                os.path.join(Base_dir, r"static/file/download_file/grobal_result")
-            )
-        )
-    )
-    result.to_csv(
-        os.path.join(
-            Base_dir,
-            r"static/file/download_file/grobal_result/result_%d.csv" % (result_length),
-        )
-    )
-    result = pd.read_csv(
-        os.path.join(
-            Base_dir,
-            r"static/file/download_file/grobal_result/result_%d.csv" % (result_length),
-        )
-    )
+    result_length = len(os.listdir(os.path.join(os.path.join(Base_dir, r"static/file/download_file/grobal_result"))))
+    result.to_csv(os.path.join(Base_dir, r"static/file/download_file/grobal_result/result_%d.csv" % (result_length),))
+    result = pd.read_csv(os.path.join(Base_dir, r"static/file/download_file/grobal_result/result_%d.csv" % (result_length),))
 
     df_smiles = pd.DataFrame(df["smiles"])
     df_smiles.columns = ["original_smiles"]
     print("smiles", df_smiles)
     result = pd.concat([df_smiles, result], axis=1)
-    result.to_csv(
-        os.path.join(
-            Base_dir,
-            r"static/file/download_file/grobal_result/result_%d.csv" % (result_length),
-        ),
-        index=False,
-    )
+    result.to_csv(os.path.join(Base_dir, r"static/file/download_file/grobal_result/result_%d.csv" % (result_length),), index=False,)
     return result, result_length, invalid_smiles, length_fold

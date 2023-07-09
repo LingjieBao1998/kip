@@ -25,6 +25,9 @@ import datetime
 
 error_msg_dict = {"error_msg": None}
 Base_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+os.makedirs(os.path.join(Base_dir, r"static/file/download_file/grobal_result"), exist_ok=True)
+os.makedirs(os.path.join(Base_dir, r"static/file/download_file/invalid_smiles"), exist_ok=True)
+os.makedirs(os.path.join(Base_dir, r"static/file/download_file/single_mol"), exist_ok=True)
 upload_path = os.path.join(Base_dir, r"static/file/upload_dir")
 df_uniprot = pd.read_csv(os.path.join(Base_dir, r"static/file/UniProt.csv"))
 df_uniprot.columns = ["UniProt", "Group", "Family", "Name", "Symbol"]
@@ -44,11 +47,7 @@ def download(request):
             print("mode", mode, "index", index, "file_index", file_index)
 
             if mode == "gobal_result":
-                grobal_path = os.path.join(
-                    Base_dir,
-                    r"static/file/download_file/grobal_result/result_%d.csv"
-                    % (int(index)),
-                )
+                grobal_path = os.path.join(Base_dir, r"static/file/download_file/grobal_result/result_%d.csv"% (int(index)),)
                 file = open(grobal_path, "rb")
                 response = FileResponse(file)
                 response["Content-Type"] = "text/csv"
@@ -57,11 +56,7 @@ def download(request):
                 return response
 
             if mode == "invalid_smiles":
-                invalid_path = os.path.join(
-                    Base_dir,
-                    r"static/file/download_file/invalid_smiles/invalid_smiles_%d.csv"
-                    % (int(index)),
-                )
+                invalid_path = os.path.join(Base_dir,r"static/file/download_file/invalid_smiles/invalid_smiles_%d.csv"% (int(index)),)
                 file = open(invalid_path, "rb")
                 response = FileResponse(file)
                 response["Content-Type"] = "text/csv"
@@ -72,17 +67,11 @@ def download(request):
                 return response
 
             if mode == "single_mol":
-                invalid_path = os.path.join(
-                    Base_dir,
-                    r"static/file/download_file/single_mol/result_%d.csv"
-                    % (int(index)),
-                )
+                invalid_path = os.path.join(Base_dir, r"static/file/download_file/single_mol/result_%d.csv"% (int(index)),)
                 file = open(invalid_path, "rb")
                 response = FileResponse(file)
                 response["Content-Type"] = "text/csv"
-                response["Content-Disposition"] = "attachment;filename=%s" % (
-                    "result_%d.csv" % (int(file_index))
-                )
+                response["Content-Disposition"] = "attachment;filename=%s" % ("result_%d.csv" % (int(file_index)))
                 print("response----->", response)
                 return response
 
@@ -130,13 +119,9 @@ def result(request):
                         dic["status"] = 200
                     # 如果sdf文件中没有一个合法的分子
                     elif len(mols) > 100000:
-                        dic[
-                            "error_msg"
-                        ] = "Too much molecule (>100000) in the file for computation"
+                        dic["error_msg"] = "Too much molecule (>100000) in the file for computation"
                     else:
-                        dic[
-                            "error_msg"
-                        ] = "SDF file must contain at least one valid mol"
+                        dic["error_msg"] = "SDF file must contain at least one valid mol"
 
                 # 检查csv文件
                 elif file_type == "csv":
@@ -144,9 +129,7 @@ def result(request):
                     df0 = pd.read_csv(file_path)
                     # 如果文件中不包含smiles列，就返回错误
                     if "smiles" not in df0.columns:
-                        dic[
-                            "error_msg"
-                        ] = "A column with the header named ' smiles ' not in CSV file!"
+                        dic["error_msg"] = "A column with the header named ' smiles ' not in CSV file!"
 
                     else:
                         PandasTools.AddMoleculeColumnToFrame(df0, smilesCol="smiles")
@@ -156,13 +139,9 @@ def result(request):
 
                         # 如果文件中没有一个合法的分子
                         if len(df0) == 0:
-                            dic[
-                                "error_msg"
-                            ] = "CSV file must contain at least one valid molecule"
+                            dic["error_msg"] = "CSV file must contain at least one valid molecule"
                         elif len(df0) > 100000:
-                            dic[
-                                "error_msg"
-                            ] = "Too much molecule (>100000) in the file for computation"
+                            dic["error_msg"] = "Too much molecule (>100000) in the file for computation"
                         else:
                             dic["status"] = 200
 
@@ -178,9 +157,7 @@ def result(request):
                 if "drawing" in data:
                     drawing = data["drawing"]
                     print("drawing", drawing)
-                    drawing_path = os.path.join(
-                        Base_dir, r"static/file/upload_dir/drawing.mol"
-                    )
+                    drawing_path = os.path.join(Base_dir, r"static/file/upload_dir/drawing.mol")
 
                     # 先把文件写入
                     with open(drawing_path, "w") as f:
@@ -222,11 +199,10 @@ def result(request):
             drawing = request.POST.get("drawing", "")
             print("smiles", smiles, "file", file)
             print("drawing", drawing)
+
             if drawing:
 
-                drawing_path = os.path.join(
-                    Base_dir, r"static/file/upload_dir/drawing1.mol"
-                )
+                drawing_path = os.path.join(Base_dir, r"static/file/upload_dir/drawing1.mol")
 
                 # 先把文件写入
                 with open(drawing_path, "w") as f:
@@ -258,12 +234,7 @@ def result(request):
             except:
                 df = pd.DataFrame([smiles], columns=["smiles"])
 
-            (
-                result_df,
-                index_result,
-                invalid_smiles,
-                length_invilid_fold,
-            ) = ml_model.model_output(df)
+            (result_df, index_result, invalid_smiles, length_invilid_fold, ) = ml_model.model_output(df)
             result_dict["smiles_list"] = [_ for _ in result_df["canonical_smiles"]]
             print("check", result_dict["smiles_list"])
             for _, smi in enumerate(result_dict["smiles_list"]):
@@ -284,14 +255,7 @@ def result(request):
             result_dict["result"] = result_df.values[:, -204:].tolist()
 
             return_dict = {
-                "item_result": [
-                    {"smiles": t[0], "mol_graph": t[1], "result": t[2]}
-                    for t in zip(
-                        result_dict["smiles_list"],
-                        result_dict["mol_graph"],
-                        result_dict["result"],
-                    )
-                ],
+                "item_result": [{"smiles": t[0], "mol_graph": t[1], "result": t[2]} for t in zip(result_dict["smiles_list"], result_dict["mol_graph"], result_dict["result"],)],
             }
             return_dict["index_result"] = index_result
             return_dict["invalid_smiles"] = invalid_smiles
@@ -299,11 +263,9 @@ def result(request):
             print("return_dict", return_dict)
             return render(request, "result.html", return_dict)
 
-
 def molecule(request):
     print("body-->", request.body)
     print("request.is_ajax()", request.is_ajax())
-    # pass
 
     # explain part
     if request.is_ajax():
@@ -321,9 +283,7 @@ def molecule(request):
 
                 predict_result_str = data["predict_result_str"]
                 print("predict_result_str", predict_result_str)
-                predict_result = [
-                    round(float(_), 3) for _ in predict_result_str.split(",")
-                ]
+                predict_result = [round(float(_), 3) for _ in predict_result_str.split(",")]
                 print("predict_result", predict_result)
                 df_explain["predict_result"] = predict_result
                 df_explain = df_explain[df_explain["predict_result"] >= mode_select]
@@ -373,9 +333,7 @@ def molecule(request):
             df_result["Prediction"] = np.array(result_float)
 
             # group_div
-            df_result["Count"] = np.array(
-                np.array(df_result["Prediction"]) >= 0.5
-            ).astype(np.int)
+            df_result["Count"] = np.array(np.array(df_result["Prediction"]) >= 0.5).astype(np.int)
             df_result.columns = [
                 "UniProt",
                 "Group",
@@ -402,9 +360,7 @@ def molecule(request):
                 color="Prediction",
                 branchvalues="total",
             )
-            uniprot_div = uniprot_fig.to_html(
-                full_html=False, default_height=711, default_width=728
-            )
+            uniprot_div = uniprot_fig.to_html(full_html=False, default_height=711, default_width=728)
 
             mol = Chem.MolFromSmiles(smiles)
             d2d = Draw.MolDraw2DSVG(360, 324)
@@ -458,19 +414,8 @@ def molecule(request):
                 ]
             ]
             df_download["Prediction"] = df_download["Prediction"].round(decimals=4)
-            single_length = len(
-                os.listdir(
-                    os.path.join(Base_dir, r"static/file/download_file/single_mol")
-                )
-            )
-            df_download.to_csv(
-                os.path.join(
-                    Base_dir,
-                    r"static/file/download_file/single_mol/result_%d.csv"
-                    % (single_length),
-                ),
-                index=False,
-            )
+            single_length = len(os.listdir(os.path.join(Base_dir, r"static/file/download_file/single_mol")))
+            df_download.to_csv(os.path.join(Base_dir, r"static/file/download_file/single_mol/result_%d.csv"%(single_length),), index=False,)
 
             return render(
                 request,

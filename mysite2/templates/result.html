@@ -199,13 +199,13 @@
         
         // the funtion of showing the file containing invalid smiles
         // and providing the route to download this file.
-        $(function(){
-          var i_smiles ={{ invalid_smiles|length }};
-          console.log(i_smiles);
-          if(i_smiles>0){
-              $("#invalid_smiles_download").append("<i class='fa fa-download' aria-hidden='true'></i><span>invalid.csv</span>");
-              $("#invalid_smiles_download").show();
-          }
+      $(function(){
+        var i_smiles ={{ invalid_smiles|length }};
+        console.log(i_smiles);
+        if(i_smiles>0){
+          $("#invalid_smiles_download").append("<i class='fa fa-download' aria-hidden='true'></i><span>invalid.csv</span>");
+          $("#invalid_smiles_download").show();
+        }
       });
     </script>
   </body>
