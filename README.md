@@ -14,7 +14,7 @@
 
 ```bash
 cd mysite2
-python manage.py
+python manage.py runserver
 ```
 
 ## 3. Citation
